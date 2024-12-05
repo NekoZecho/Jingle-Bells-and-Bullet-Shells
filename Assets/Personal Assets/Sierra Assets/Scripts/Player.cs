@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal"); // Get horizontal input (A/D or Left/Right Arrow keys)
 
         // Apply movement to the Rigidbody2D on the X-axis, preserving the Y velocity (gravity & jump)
-        rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
     }
 
     private void Jump()
