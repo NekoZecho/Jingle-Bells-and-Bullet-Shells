@@ -11,32 +11,29 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();  // Get the Rigidbody2D component
     }
 
     void Update()
     {
-        // Debugging: Check whether the player is grounded
-        Debug.DrawRay(transform.position - new Vector3(0, 0.6f, 0), Vector2.down * 0.1f, Color.red); // Draw a ray for visualization
-
-        // Check if the player is on the ground using a raycast slightly below the player
+        // Perform a raycast to check if the player is grounded
         RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0, 0.6f, 0), Vector2.down, 0.1f, groundLayer);
-        isGrounded = hit.collider != null;
+        isGrounded = hit.collider != null;  // If the ray hits something, the player is grounded
 
-        // Debugging: Print if the player is grounded
+        // Debugging: Print "Is Grounded: true" or "Is Grounded: false"
         Debug.Log("Is Grounded: " + isGrounded);
 
         // Handle movement (horizontal input)
         float moveInput = Input.GetAxis("Horizontal");
         float targetSpeed = moveInput * moveSpeed;
 
-        // Apply smooth movement, but only adjust the horizontal velocity (no vertical changes)
+        // Apply smooth horizontal movement (but leave the vertical velocity unaffected)
         rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
 
-        // Handle jumping (only if grounded)
+        // Handle jumping (only if the player is grounded)
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            Debug.Log("Jumping!"); // Debug log for jump
+            Debug.Log("Jumping!"); // Debug log for jump action
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Apply jump force
         }
     }
