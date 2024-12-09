@@ -16,17 +16,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Check if the player is on the ground using a simple raycast
-        isGrounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, 0.5f, 0), 0.1f, groundLayer);
+        // Check if the player is on the ground using a raycast slightly below the player
+        RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0, 0.6f, 0), Vector2.down, 0.1f, groundLayer);
+        isGrounded = hit.collider != null;
 
-        // Handle movement
+        // Handle movement (horizontal input)
         float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        float targetSpeed = moveInput * moveSpeed;
 
-        // Handle jumping
+        // Apply smooth movement, but only adjust the horizontal velocity (no vertical changes)
+        rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
+
+        // Handle jumping (only if grounded)
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Apply jump force
+        }
+
+        // Prevent floating by ensuring the player doesn't have unwanted upward motion
+        if (!isGrounded && rb.linearVelocity.y > 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Stop upward velocity when falling
         }
     }
 }
