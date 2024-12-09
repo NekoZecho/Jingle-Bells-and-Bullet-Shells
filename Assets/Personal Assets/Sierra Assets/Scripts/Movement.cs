@@ -16,9 +16,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Debugging: Check whether the player is grounded
+        Debug.DrawRay(transform.position - new Vector3(0, 0.6f, 0), Vector2.down * 0.1f, Color.red); // Draw a ray for visualization
+
         // Check if the player is on the ground using a raycast slightly below the player
         RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0, 0.6f, 0), Vector2.down, 0.1f, groundLayer);
         isGrounded = hit.collider != null;
+
+        // Debugging: Print if the player is grounded
+        Debug.Log("Is Grounded: " + isGrounded);
 
         // Handle movement (horizontal input)
         float moveInput = Input.GetAxis("Horizontal");
@@ -30,13 +36,8 @@ public class PlayerController : MonoBehaviour
         // Handle jumping (only if grounded)
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
+            Debug.Log("Jumping!"); // Debug log for jump
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Apply jump force
-        }
-
-        // Prevent floating by ensuring the player doesn't have unwanted upward motion
-        if (!isGrounded && rb.linearVelocity.y > 0)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Stop upward velocity when falling
         }
     }
 }
