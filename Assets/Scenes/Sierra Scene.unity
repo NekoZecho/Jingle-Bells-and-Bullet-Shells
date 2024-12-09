@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 1434712662}
   m_Layer: 0
   m_Name: test player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -715,6 +715,7 @@ GameObject:
   - component: {fileID: 2111600852}
   - component: {fileID: 2111600851}
   - component: {fileID: 2111600853}
+  - component: {fileID: 2111600854}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -838,6 +839,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2111600854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111600850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a43b35e4018edf43882873c83be6565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vanishDuration: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
