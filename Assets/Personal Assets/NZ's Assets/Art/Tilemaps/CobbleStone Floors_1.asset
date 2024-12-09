@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Test_1
+  m_Name: CobbleStone Floors_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1405749113, guid: 9769b4b7dbaa673458252dab59e1415c, type: 3}
+  m_Sprite: {fileID: -1588854004, guid: ae6a3a2eebe02164cbb3c4e4eb418970, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d5b0850f5a6ec6b48997a7d719df44e5
+guid: ae6a3a2eebe02164cbb3c4e4eb418970
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 291c309dcd84c2244a3bec7161942967
-      internalID: 1758090692
+      spriteID: a486f080a0d255e4dadd565bd4951075
+      internalID: -1588854004
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 40dcf7b986fe66f42b2dbac250c41a50
+    spriteID: 0edfb21da7811b149954fef5d7b7b746
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       CobbleStone Floors_0: 3471590185436871677
-      CobbleStone Floors_1: 1758090692
+      CobbleStone Floors_1: -1588854004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
