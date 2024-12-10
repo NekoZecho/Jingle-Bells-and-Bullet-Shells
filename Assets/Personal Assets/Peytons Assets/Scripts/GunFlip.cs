@@ -5,6 +5,24 @@ public class FlipObject : MonoBehaviour
     // The object to be flipped
     public Transform objectToFlip;
 
+    // Sorting order and layer values
+    public int sortingOrderWhenLeft = 5;
+    public string sortingLayerWhenLeft = "Foreground";
+    public int sortingOrderWhenRight = 0;
+    public string sortingLayerWhenRight = "Default";
+
+    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        // Get the SpriteRenderer component from the object to flip
+        spriteRenderer = objectToFlip.GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("SpriteRenderer component not found on the object to flip!");
+        }
+    }
+
     void Update()
     {
         // Get the position of the mouse in the world
@@ -21,6 +39,13 @@ public class FlipObject : MonoBehaviour
             {
                 objectToFlip.localScale = new Vector3(objectToFlip.localScale.x, -objectToFlip.localScale.y, objectToFlip.localScale.z);
             }
+
+            // Change sorting order and layer for the right side
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.sortingOrder = sortingOrderWhenRight;
+                spriteRenderer.sortingLayerName = sortingLayerWhenRight;
+            }
         }
         else
         {
@@ -28,6 +53,13 @@ public class FlipObject : MonoBehaviour
             if (objectToFlip.localScale.y > 0)
             {
                 objectToFlip.localScale = new Vector3(objectToFlip.localScale.x, -objectToFlip.localScale.y, objectToFlip.localScale.z);
+            }
+
+            // Change sorting order and layer for the left side
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.sortingOrder = sortingOrderWhenLeft;
+                spriteRenderer.sortingLayerName = sortingLayerWhenLeft;
             }
         }
     }
