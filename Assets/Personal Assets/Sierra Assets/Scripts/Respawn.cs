@@ -8,16 +8,19 @@ public class RespawnOnFall : MonoBehaviour
 
     void Start()
     {
-        // Save the starting position (initial position of the player)
-        startPosition = transform.position;
-
         // Get the Rigidbody component
         playerRigidbody = GetComponent<Rigidbody>();
+
+        // Check if the Rigidbody is missing
         if (playerRigidbody == null)
         {
-            Debug.LogError("No Rigidbody found on the player!");
+            // Log an error and add a Rigidbody to the player
+            Debug.LogError("No Rigidbody found on the player! Adding one.");
+            playerRigidbody = gameObject.AddComponent<Rigidbody>();
         }
     }
+
+
 
     void Update()
     {
