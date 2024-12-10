@@ -22,6 +22,10 @@ public class RapidFireShooter2D : MonoBehaviour
     [Header("Shooting Particle System")]
     public ParticleSystem shootingParticles;
 
+    [Header("Audio Settings")]
+    public AudioClip gunfireSound; // Sound effect for firing
+    private AudioSource audioSource; // Audio source component
+
     private float nextFireTime = 0f;
 
     void Start()
@@ -31,6 +35,14 @@ public class RapidFireShooter2D : MonoBehaviour
             shootingParticles.Stop();
             var mainModule = shootingParticles.main;
             mainModule.prewarm = true; // Enable prewarm
+        }
+
+        // Get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            // If no AudioSource, add one
+            audioSource = gameObject.AddComponent<AudioSource>();
         }
     }
 
@@ -71,6 +83,9 @@ public class RapidFireShooter2D : MonoBehaviour
 
             ShowMuzzleFlash();
             ChangeGunSprite(firingGunSprite);
+
+            // Play the gunfire sound every time a bullet is fired
+            PlayGunfireSound();
 
             Destroy(projectile, 5f);
             Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
@@ -126,5 +141,18 @@ public class RapidFireShooter2D : MonoBehaviour
     void ResetGunSprite()
     {
         ChangeGunSprite(idleGunSprite);
+    }
+
+    // Play the gunfire sound
+    void PlayGunfireSound()
+    {
+        if (gunfireSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(gunfireSound);
+        }
+        else
+        {
+            Debug.LogWarning("Gunfire sound is not assigned or AudioSource is missing!");
+        }
     }
 }
