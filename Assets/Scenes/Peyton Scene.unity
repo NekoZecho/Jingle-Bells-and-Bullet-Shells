@@ -1121,6 +1121,10 @@ MonoBehaviour:
   casingEjectForce: 2
   casingLifetime: 1
   casingFreezeTime: 0.2
+  gunAnimator: {fileID: 0}
+  reloadTriggerName: Reload
+  Reload: 0
+  reloadTime: 2
 --- !u!212 &955429141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11742,7 +11746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1757167063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12113,6 +12117,10 @@ MonoBehaviour:
   casingEjectForce: 2
   casingLifetime: 5
   casingFreezeTime: 2
+  gunAnimator: {fileID: 0}
+  reloadTriggerName: Reload
+  Reload: 0
+  reloadTime: 2
 --- !u!212 &1881149215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12180,6 +12188,7 @@ GameObject:
   - component: {fileID: 1885739895}
   - component: {fileID: 1885739896}
   - component: {fileID: 1885739897}
+  - component: {fileID: 1885739898}
   m_Layer: 0
   m_Name: M4A1
   m_TagString: Untagged
@@ -12196,8 +12205,8 @@ Transform:
   m_GameObject: {fileID: 1885739893}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.183, y: 0.02, z: 0}
-  m_LocalScale: {x: 1.1581933, y: 13.149368, z: 1.9631376}
+  m_LocalPosition: {x: 0.148, y: 0.14, z: 0}
+  m_LocalScale: {x: 0.82037157, y: 9.313961, z: 1.3905296}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2080968310}
@@ -12247,7 +12256,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1124715760993112764, guid: bfaeb49987172a24cbcc0c56ce9d877d, type: 3}
+  m_Sprite: {fileID: 6005177489129570977, guid: e098a602d1eb1cf4c83efb6a8d2466e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12279,8 +12288,8 @@ MonoBehaviour:
   muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
   muzzleFlashDuration: 0.1
   gunSpriteRenderer: {fileID: 1885739895}
-  idleGunSprite: {fileID: 1124715760993112764, guid: bfaeb49987172a24cbcc0c56ce9d877d, type: 3}
-  firingGunSprite: {fileID: -8809470994601461542, guid: 34dd02ed54046194086e0db078b081ee, type: 3}
+  idleGunSprite: {fileID: 21300000, guid: f12585fff9c24a247a9321eff44467d3, type: 3}
+  firingGunSprite: {fileID: 21300000, guid: 94674070d37fa9447aae7d6ae36a2d09, type: 3}
   gunFireSpriteDuration: 0.1
   shootingParticles: {fileID: 0}
   gunfireSound: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
@@ -12288,6 +12297,10 @@ MonoBehaviour:
   casingEjectForce: 2
   casingLifetime: 1.5
   casingFreezeTime: 0.2
+  gunAnimator: {fileID: 1885739898}
+  reloadTriggerName: Reload
+  Reload: 0
+  reloadTime: 2
 --- !u!82 &1885739897
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12385,6 +12398,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1885739898
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885739893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91f9980c10cb3374faee9d3f4fc6cbee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1948186500
 GameObject:
   m_ObjectHideFlags: 0
@@ -12413,7 +12448,7 @@ Transform:
   m_GameObject: {fileID: 1948186500}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.012, y: -0.253, z: 0}
+  m_LocalPosition: {x: -0.013, y: -0.199, z: 0}
   m_LocalScale: {x: 1.695, y: 0.1492952, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12836,7 +12871,7 @@ Transform:
   m_GameObject: {fileID: 2080968309}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.295, y: 0.0549, z: 0.0015137376}
+  m_LocalPosition: {x: 0.49, y: 0.041, z: 0.0015137376}
   m_LocalScale: {x: 0.6572854, y: 0.6572855, z: 0.65728545}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -36,6 +36,12 @@ public class RapidFireShooter2D : MonoBehaviour
     public float casingLifetime = 5f;
     public float casingFreezeTime = 2f;
 
+    [Header("Reload Settings")]
+    public Animator gunAnimator; // Reference to the Animator for reload animation
+    public string reloadTriggerName = "Reload"; // Trigger name for the reload animation
+    public bool Reload = false; // Track reload state
+    public float reloadTime = 2f; // Time to reload (in seconds)
+
     private float nextFireTime = 0f;
 
     void Start()
@@ -56,17 +62,27 @@ public class RapidFireShooter2D : MonoBehaviour
 
     void Update()
     {
-        if (holdToFire && Input.GetMouseButton(0))
+        // Check for reload input (R key)
+        if (Input.GetKeyDown(KeyCode.R) && !Reload)
         {
-            HandleShooting();
+            StartCoroutine(ReloadAnimation());
         }
-        else if (!holdToFire && Input.GetMouseButtonDown(0))
+
+        // Check if player is holding fire button and not reloading
+        if (!Reload)
         {
-            HandleShooting();
-        }
-        else
-        {
-            StopShootingParticles();
+            if (holdToFire && Input.GetMouseButton(0))
+            {
+                HandleShooting();
+            }
+            else if (!holdToFire && Input.GetMouseButtonDown(0))
+            {
+                HandleShooting();
+            }
+            else
+            {
+                StopShootingParticles();
+            }
         }
     }
 
@@ -203,7 +219,6 @@ public class RapidFireShooter2D : MonoBehaviour
         }
     }
 
-
     IEnumerator FreezeCasingMovement(Rigidbody2D casingRb, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -214,5 +229,17 @@ public class RapidFireShooter2D : MonoBehaviour
             casingRb.angularVelocity = 0f;
             casingRb.isKinematic = true;
         }
+    }
+
+    // Coroutine to handle reload animation
+    IEnumerator ReloadAnimation()
+    {
+        Reload = true; // Disable shooting
+        gunAnimator.SetTrigger(reloadTriggerName); // Trigger reload animation
+
+        // Wait for the specified reload time (e.g., 2 seconds)
+        yield return new WaitForSeconds(reloadTime);
+
+        Reload = false; // Enable shooting again
     }
 }
