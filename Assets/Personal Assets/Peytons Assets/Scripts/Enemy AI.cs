@@ -11,14 +11,19 @@ public class TopDownEnemyAI : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
 
-    [Header("Spawn Settings")]
+    [Header("Blood Settings")]
     public List<GameObject> hitSpawnObjects;
     public GameObject deathSpawnObject;
+    public float hitSpawnChance = 0.5f; // Chance to spawn a hit object
+    public float hitSpawnRadius = 1f;  // Radius for hit object spawn
 
     [Header("Components")]
     public Transform player;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+
+    [Header("Weapon Settings")]
+    public Transform weapon; // Weapon transform to flip with the player
 
     public List<Sprite> hitSprites;  // List of hit sprites
     public float hitSpriteDuration = 0.2f;
@@ -29,7 +34,10 @@ public class TopDownEnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalSprite = spriteRenderer.sprite;
-        if (!player) player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        if (!player)
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+
         currentHealth = maxHealth;
     }
 
@@ -45,22 +53,40 @@ public class TopDownEnemyAI : MonoBehaviour
     {
         Vector2 direction = (player.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
-        spriteRenderer.flipX = direction.x < 0;
+
+        // Flip the sprite and the weapon
+        bool flipX = direction.x < 0;
+        spriteRenderer.flipX = flipX;
+
+        if (weapon)
+        {
+            Vector3 weaponScale = weapon.localScale;
+            weaponScale.y = flipX ? -Mathf.Abs(weaponScale.y) : Mathf.Abs(weaponScale.y);
+            weapon.localScale = weaponScale;
+        }
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        if (hitSpawnObjects.Count > 0)
-            Instantiate(hitSpawnObjects[Random.Range(0, hitSpawnObjects.Count)], transform.position, Quaternion.identity);
 
-        if (currentHealth <= 0) Die();
-        else if (hitSprites.Count > 0) StartCoroutine(TemporarySpriteChange());
+        // Spawn a hit object based on chance
+        if (hitSpawnObjects.Count > 0 && Random.value <= hitSpawnChance)
+        {
+            Vector2 spawnOffset = Random.insideUnitCircle * hitSpawnRadius;
+            Instantiate(hitSpawnObjects[Random.Range(0, hitSpawnObjects.Count)], (Vector2)transform.position + spawnOffset, Quaternion.identity);
+        }
+
+        if (currentHealth <= 0)
+            Die();
+        else if (hitSprites.Count > 0)
+            StartCoroutine(TemporarySpriteChange());
     }
 
     private void Die()
     {
-        if (deathSpawnObject) Instantiate(deathSpawnObject, transform.position, Quaternion.identity);
+        if (deathSpawnObject)
+            Instantiate(deathSpawnObject, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
@@ -77,11 +103,18 @@ public class TopDownEnemyAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             Bullet bullet = collision.gameObject.GetComponent<Bullet>();
-            if (bullet) TakeDamage(bullet.damage);
+            if (bullet)
+                TakeDamage(bullet.damage);
             Destroy(collision.gameObject);
         }
     }
 
-    private void OnDrawGizmosSelected() =>
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, hitSpawnRadius);
+    }
 }

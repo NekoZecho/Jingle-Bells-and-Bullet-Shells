@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: -2554199133103860675}
   - component: {fileID: -5753776470072580209}
   - component: {fileID: 7153452374749840273}
-  - component: {fileID: 3980481503635855101}
+  - component: {fileID: -8727033512808758933}
   m_Layer: 0
-  m_Name: Strong Bullet
-  m_TagString: Bullet
+  m_Name: Enemy Bullet
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,7 +271,7 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
---- !u!114 &3980481503635855101
+--- !u!114 &-8727033512808758933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5118138635693579939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a86f345ff3266a4a952ac4882754522, type: 3}
+  m_Script: {fileID: 11500000, guid: ee63919acbe2a1e4f8c89ee0cbd75eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 5

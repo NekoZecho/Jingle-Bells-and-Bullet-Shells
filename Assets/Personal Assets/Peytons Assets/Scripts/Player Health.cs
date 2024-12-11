@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; // Required for scene management
-using System.Collections;         // Required for Coroutines
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,7 +7,6 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;        // The maximum health of the player
     public int currentHealth;          // The player's current health
     public int damageFromEnemy = 10;   // Damage taken when touching an enemy
-    public float damageInterval = 0.5f; // Time in seconds between each damage
 
     private bool isTakingDamage = false; // Tracks if the player is in contact with an enemy
 
@@ -50,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && !isTakingDamage)
         {
             isTakingDamage = true;
-            StartCoroutine(DamageOverTime());
+            TakeDamage(damageFromEnemy); // Apply damage instantly
         }
     }
 
@@ -60,17 +58,6 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             isTakingDamage = false;
-            StopCoroutine(DamageOverTime());
-        }
-    }
-
-    // Coroutine to deal damage over time
-    IEnumerator DamageOverTime()
-    {
-        while (isTakingDamage)
-        {
-            TakeDamage(damageFromEnemy);
-            yield return new WaitForSeconds(damageInterval);
         }
     }
 }
