@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class RapidFireShooter2D : MonoBehaviour
+public class ShotgunShooter2D : MonoBehaviour
 {
     [Header("Shooting Settings")]
     public GameObject projectilePrefab;
     public Transform firingPoint;
     public float projectileSpeed = 10f;
-    public float fireRate = 0.2f; // Keep the fire rate for rapid fire
-    public float bulletSpreadAngle = 5f;
+    public float fireRate = 0.5f; // Increased fire rate for shotgun
+    public float bulletSpreadAngle = 15f; // Spread for shotgun
 
     [Header("Fire Mode Settings")]
     public bool holdToFire = true; // Enable hold-to-fire functionality
@@ -80,25 +80,30 @@ public class RapidFireShooter2D : MonoBehaviour
     {
         if (projectilePrefab != null && firingPoint != null)
         {
-            GameObject projectile = Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);
-
-            float spread = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
-            Vector2 direction = Quaternion.Euler(0, 0, spread) * firingPoint.right;
-
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            // Fire 3 bullets with spread
+            for (int i = -1; i <= 1; i++)
             {
-                rb.linearVelocity = direction * projectileSpeed;
+                GameObject projectile = Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);
+
+                // Calculate the spread based on the loop index (-1, 0, 1)
+                float spread = i * bulletSpreadAngle;
+                Vector2 direction = Quaternion.Euler(0, 0, spread) * firingPoint.right;
+
+                Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.linearVelocity = direction * projectileSpeed; // Apply velocity
+                }
+
+                Destroy(projectile, 5f); // Destroy after 5 seconds
+
+                // Play muzzle flash, sound, and gun sprite changes
+                ShowMuzzleFlash();
+                ChangeGunSprite(firingGunSprite);
+                PlayGunfireSound();
+
+                Invoke(nameof(ResetGunSprite), gunFireSpriteDuration); // Reset gun sprite after shooting
             }
-
-            ShowMuzzleFlash();
-            ChangeGunSprite(firingGunSprite);
-
-            // Play the gunfire sound every time a bullet is fired
-            PlayGunfireSound();
-
-            Destroy(projectile, 5f);
-            Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
         }
         else
         {

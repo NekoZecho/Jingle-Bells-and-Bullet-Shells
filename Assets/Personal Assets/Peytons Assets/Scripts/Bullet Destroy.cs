@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     // This method is called when the bullet collides with something
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the bullet hits something tagged "Enemy"
+        // Check if the bullet hits something tagged "Enemy" or "Map"
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // Get the EnemyAI component and apply damage to the enemy
@@ -18,9 +18,14 @@ public class Bullet : MonoBehaviour
             {
                 enemy.TakeDamage(damage); // Apply bullet damage to the enemy
             }
-        }
 
-        // Destroy the bullet after the collision
-        Destroy(gameObject);
+            // Destroy the bullet after hitting an enemy
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Map"))
+        {
+            // Destroy the bullet when hitting the map
+            Destroy(gameObject);
+        }
     }
 }

@@ -14,6 +14,13 @@ public class TopDownMovementWithMouseFlip : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip moveSound; // Sound to play when moving
 
+    // Particle systems for movement
+    public ParticleSystem movementParticlesRight; // Particle effect when facing right
+    public ParticleSystem movementParticlesLeft;  // Particle effect when facing left
+
+    private bool isPlayingRightParticles = false; // To track right particle system state
+    private bool isPlayingLeftParticles = false; // To track left particle system state
+
     void Start()
     {
         // Get the SpriteRenderer, Rigidbody2D, and AudioSource components
@@ -23,6 +30,16 @@ public class TopDownMovementWithMouseFlip : MonoBehaviour
 
         // Ensure the audio source does not loop
         audioSource.loop = false;
+
+        // Ensure both particle systems are stopped at the start
+        if (movementParticlesRight != null)
+        {
+            movementParticlesRight.Stop();
+        }
+        if (movementParticlesLeft != null)
+        {
+            movementParticlesLeft.Stop();
+        }
     }
 
     void Update()
@@ -37,11 +54,53 @@ public class TopDownMovementWithMouseFlip : MonoBehaviour
         // Get mouse position in world space
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        // Flip the sprite based on the mouse's position relative to the player
-        if (mousePosition.x < transform.position.x)
-            spriteRenderer.flipX = true; // Face left
+        // Determine which direction the player is facing
+        bool facingLeft = mousePosition.x < transform.position.x;
+        spriteRenderer.flipX = facingLeft; // Flip sprite accordingly
+
+        // Play the correct particle system based on direction and movement
+        if (movement.sqrMagnitude > 0)
+        {
+            if (facingLeft)
+            {
+                if (!isPlayingLeftParticles && movementParticlesLeft != null)
+                {
+                    movementParticlesLeft.Play();
+                    isPlayingLeftParticles = true;
+                }
+                if (isPlayingRightParticles && movementParticlesRight != null)
+                {
+                    movementParticlesRight.Stop();
+                    isPlayingRightParticles = false;
+                }
+            }
+            else
+            {
+                if (!isPlayingRightParticles && movementParticlesRight != null)
+                {
+                    movementParticlesRight.Play();
+                    isPlayingRightParticles = true;
+                }
+                if (isPlayingLeftParticles && movementParticlesLeft != null)
+                {
+                    movementParticlesLeft.Stop();
+                    isPlayingLeftParticles = false;
+                }
+            }
+        }
         else
-            spriteRenderer.flipX = false; // Face right
+        {
+            if (isPlayingLeftParticles && movementParticlesLeft != null)
+            {
+                movementParticlesLeft.Stop();
+                isPlayingLeftParticles = false;
+            }
+            if (isPlayingRightParticles && movementParticlesRight != null)
+            {
+                movementParticlesRight.Stop();
+                isPlayingRightParticles = false;
+            }
+        }
 
         // Play or stop the sound based on whether the player is moving
         if (movement.sqrMagnitude > 0 && !audioSource.isPlaying)
