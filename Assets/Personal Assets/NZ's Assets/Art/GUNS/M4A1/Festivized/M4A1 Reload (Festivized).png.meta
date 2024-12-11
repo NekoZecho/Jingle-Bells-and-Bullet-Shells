@@ -1,0 +1,1007 @@
+fileFormatVersion: 2
+guid: f44c45364f7c08c4486874d8e6773147
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1922256998684563865
+    second: M4A1 Reload (Festivized)_0
+  - first:
+      213: -3698028127542563989
+    second: M4A1 Reload (Festivized)_1
+  - first:
+      213: 5731073295494223993
+    second: M4A1 Reload (Festivized)_2
+  - first:
+      213: 2027845354707596208
+    second: M4A1 Reload (Festivized)_3
+  - first:
+      213: 7434630045627933502
+    second: M4A1 Reload (Festivized)_4
+  - first:
+      213: -7745510609424412004
+    second: M4A1 Reload (Festivized)_5
+  - first:
+      213: -873371039549407375
+    second: M4A1 Reload (Festivized)_6
+  - first:
+      213: -4790407366510741638
+    second: M4A1 Reload (Festivized)_7
+  - first:
+      213: 3752480914091155753
+    second: M4A1 Reload (Festivized)_8
+  - first:
+      213: -3703174139317103218
+    second: M4A1 Reload (Festivized)_9
+  - first:
+      213: 6576502055866083283
+    second: M4A1 Reload (Festivized)_10
+  - first:
+      213: 5540755975581270610
+    second: M4A1 Reload (Festivized)_11
+  - first:
+      213: 3443405010392915590
+    second: M4A1 Reload (Festivized)_12
+  - first:
+      213: -4490417345552189674
+    second: M4A1 Reload (Festivized)_13
+  - first:
+      213: 2794229714914918565
+    second: M4A1 Reload (Festivized)_14
+  - first:
+      213: -6924966544390090114
+    second: M4A1 Reload (Festivized)_15
+  - first:
+      213: 92183751818110901
+    second: M4A1 Reload (Festivized)_16
+  - first:
+      213: -6501630921476811775
+    second: M4A1 Reload (Festivized)_17
+  - first:
+      213: -2521604608598183339
+    second: M4A1 Reload (Festivized)_18
+  - first:
+      213: -2564297578306697347
+    second: M4A1 Reload (Festivized)_19
+  - first:
+      213: 6398388247519171061
+    second: M4A1 Reload (Festivized)_20
+  - first:
+      213: 438658421068157417
+    second: M4A1 Reload (Festivized)_21
+  - first:
+      213: 4939684205800462584
+    second: M4A1 Reload (Festivized)_22
+  - first:
+      213: 1347497733094328493
+    second: M4A1 Reload (Festivized)_23
+  - first:
+      213: -5046895573733362798
+    second: M4A1 Reload (Festivized)_24
+  - first:
+      213: -8726377294027906138
+    second: M4A1 Reload (Festivized)_25
+  - first:
+      213: -2602846544417219238
+    second: M4A1 Reload (Festivized)_26
+  - first:
+      213: 657860872074044155
+    second: M4A1 Reload (Festivized)_27
+  - first:
+      213: -4655094232686829704
+    second: M4A1 Reload (Festivized)_28
+  - first:
+      213: 4115892280924496281
+    second: M4A1 Reload (Festivized)_29
+  - first:
+      213: 3135790525716377278
+    second: M4A1 Reload (Festivized)_30
+  - first:
+      213: -127448818857471008
+    second: M4A1 Reload (Festivized)_31
+  - first:
+      213: 2565046686778760353
+    second: M4A1 Reload (Festivized)_32
+  - first:
+      213: -2863465469239634704
+    second: M4A1 Reload (Festivized)_33
+  - first:
+      213: 1739943092764035842
+    second: M4A1 Reload (Festivized)_34
+  - first:
+      213: 7752689600189369014
+    second: M4A1 Reload (Festivized)_35
+  - first:
+      213: 1004733058554064379
+    second: M4A1 Reload (Festivized)_36
+  - first:
+      213: -1943486738432631423
+    second: M4A1 Reload (Festivized)_37
+  - first:
+      213: 1668622394371814858
+    second: M4A1 Reload (Festivized)_38
+  - first:
+      213: 5295584421748936857
+    second: M4A1 Reload (Festivized)_39
+  - first:
+      213: -8471090690629556110
+    second: M4A1 Reload (Festivized)_40
+  - first:
+      213: -2665802797629489937
+    second: M4A1 Reload (Festivized)_41
+  - first:
+      213: -1061008841492913450
+    second: M4A1 Reload (Festivized)_42
+  - first:
+      213: 2957460046673301077
+    second: M4A1 Reload (Festivized)_43
+  - first:
+      213: 3079960930870230964
+    second: M4A1 Reload (Festivized)_44
+  - first:
+      213: -154969412973558085
+    second: M4A1 Reload (Festivized)_45
+  - first:
+      213: -1613447461559141436
+    second: M4A1 Reload (Festivized)_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9991a954e8a3daa10800000000000000
+      internalID: 1922256998684563865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b2c60d207fdacc0800000000000000
+      internalID: -3698028127542563989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97819a73cccd88f40800000000000000
+      internalID: 5731073295494223993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3b5ca2b9a542c10800000000000000
+      internalID: 2027845354707596208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33691ad2ac1d2760800000000000000
+      internalID: 7434630045627933502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c921d31632b628490800000000000000
+      internalID: -7745510609424412004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f3b86baa921e3f0800000000000000
+      internalID: -873371039549407375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7776bd71ed058db0800000000000000
+      internalID: -4790407366510741638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92126d6828d731430800000000000000
+      internalID: 3752480914091155753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8557949dbeab9cc0800000000000000
+      internalID: -3703174139317103218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d72688a6cd644b50800000000000000
+      internalID: 6576502055866083283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25205af1438b4ec40800000000000000
+      internalID: 5540755975581270610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e154eec9e69cf20800000000000000
+      internalID: 3443405010392915590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617fb192735dea1c0800000000000000
+      internalID: -4490417345552189674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0485a0f1917c620800000000000000
+      internalID: 2794229714914918565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e721a203e9395ef90800000000000000
+      internalID: -6924966544390090114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b76e2542a0874100800000000000000
+      internalID: 92183751818110901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104dda0cf1195c5a0800000000000000
+      internalID: -6501630921476811775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5527480f7f5710dd0800000000000000
+      internalID: -2521604608598183339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7782a250f8c96cd0800000000000000
+      internalID: -2564297578306697347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f11a640634abc850800000000000000
+      internalID: 6398388247519171061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e15085828d661600800000000000000
+      internalID: 438658421068157417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f818551d984d8440800000000000000
+      internalID: 4939684205800462584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da84bb48c0643b210800000000000000
+      internalID: 1347497733094328493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293b12d1733d5f9b0800000000000000
+      internalID: -5046895573733362798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3ae6dd51ea5e680800000000000000
+      internalID: -8726377294027906138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d982bbbd4d0ebd0800000000000000
+      internalID: -2602846544417219238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf22a974af0312900800000000000000
+      internalID: 657860872074044155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f5bb88578c56fb0800000000000000
+      internalID: -4655094232686829704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991e64af8369e1930800000000000000
+      internalID: 4115892280924496281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe2c577ed0948b20800000000000000
+      internalID: 3135790525716377278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M4A1 Reload (Festivized)_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e315f879f53b3ef0800000000000000
+      internalID: -127448818857471008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7dee82f2c926eea44bca89539e11ef44
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      M4A1 Reload (Festivized)_0: 1922256998684563865
+      M4A1 Reload (Festivized)_1: -3698028127542563989
+      M4A1 Reload (Festivized)_10: 6576502055866083283
+      M4A1 Reload (Festivized)_11: 5540755975581270610
+      M4A1 Reload (Festivized)_12: 3443405010392915590
+      M4A1 Reload (Festivized)_13: -4490417345552189674
+      M4A1 Reload (Festivized)_14: 2794229714914918565
+      M4A1 Reload (Festivized)_15: -6924966544390090114
+      M4A1 Reload (Festivized)_16: 92183751818110901
+      M4A1 Reload (Festivized)_17: -6501630921476811775
+      M4A1 Reload (Festivized)_18: -2521604608598183339
+      M4A1 Reload (Festivized)_19: -2564297578306697347
+      M4A1 Reload (Festivized)_2: 5731073295494223993
+      M4A1 Reload (Festivized)_20: 6398388247519171061
+      M4A1 Reload (Festivized)_21: 438658421068157417
+      M4A1 Reload (Festivized)_22: 4939684205800462584
+      M4A1 Reload (Festivized)_23: 1347497733094328493
+      M4A1 Reload (Festivized)_24: -5046895573733362798
+      M4A1 Reload (Festivized)_25: -8726377294027906138
+      M4A1 Reload (Festivized)_26: -2602846544417219238
+      M4A1 Reload (Festivized)_27: 657860872074044155
+      M4A1 Reload (Festivized)_28: -4655094232686829704
+      M4A1 Reload (Festivized)_29: 4115892280924496281
+      M4A1 Reload (Festivized)_3: 2027845354707596208
+      M4A1 Reload (Festivized)_30: 3135790525716377278
+      M4A1 Reload (Festivized)_31: -127448818857471008
+      M4A1 Reload (Festivized)_4: 7434630045627933502
+      M4A1 Reload (Festivized)_5: -7745510609424412004
+      M4A1 Reload (Festivized)_6: -873371039549407375
+      M4A1 Reload (Festivized)_7: -4790407366510741638
+      M4A1 Reload (Festivized)_8: 3752480914091155753
+      M4A1 Reload (Festivized)_9: -3703174139317103218
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
