@@ -608,7 +608,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1112,6 +1112,10 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   shootingParticles: {fileID: 0}
   gunfireSound: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
+  casingEjectForce: 2
+  casingLifetime: 1
+  casingFreezeTime: 0.2
 --- !u!212 &955429141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11997,6 +12001,10 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   shootingParticles: {fileID: 0}
   gunfireSound: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  casingPrefab: {fileID: 0}
+  casingEjectForce: 2
+  casingLifetime: 5
+  casingFreezeTime: 2
 --- !u!212 &1881149215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12168,6 +12176,10 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   shootingParticles: {fileID: 0}
   gunfireSound: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
+  casingEjectForce: 2
+  casingLifetime: 1.5
+  casingFreezeTime: 0.2
 --- !u!82 &1885739897
 AudioSource:
   m_ObjectHideFlags: 0

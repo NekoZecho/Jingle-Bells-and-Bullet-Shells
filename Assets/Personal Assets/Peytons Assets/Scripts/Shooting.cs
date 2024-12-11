@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class RapidFireShooter2D : MonoBehaviour
 {
@@ -6,11 +7,11 @@ public class RapidFireShooter2D : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform firingPoint;
     public float projectileSpeed = 10f;
-    public float fireRate = 0.2f; // Keep the fire rate for rapid fire
+    public float fireRate = 0.2f;
     public float bulletSpreadAngle = 5f;
 
     [Header("Fire Mode Settings")]
-    public bool holdToFire = true; // Enable hold-to-fire functionality
+    public bool holdToFire = true;
 
     [Header("Muzzle Flash Settings")]
     public GameObject muzzleFlashPrefab;
@@ -26,8 +27,14 @@ public class RapidFireShooter2D : MonoBehaviour
     public ParticleSystem shootingParticles;
 
     [Header("Audio Settings")]
-    public AudioClip gunfireSound; // Sound effect for firing
-    private AudioSource audioSource; // Audio source component
+    public AudioClip gunfireSound;
+    private AudioSource audioSource;
+
+    [Header("Casing Settings")]
+    public GameObject casingPrefab;
+    public float casingEjectForce = 5f;
+    public float casingLifetime = 5f;
+    public float casingFreezeTime = 2f;
 
     private float nextFireTime = 0f;
 
@@ -37,14 +44,12 @@ public class RapidFireShooter2D : MonoBehaviour
         {
             shootingParticles.Stop();
             var mainModule = shootingParticles.main;
-            mainModule.prewarm = true; // Enable prewarm
+            mainModule.prewarm = true;
         }
 
-        // Get the AudioSource component
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
-            // If no AudioSource, add one
             audioSource = gameObject.AddComponent<AudioSource>();
         }
     }
@@ -67,13 +72,13 @@ public class RapidFireShooter2D : MonoBehaviour
 
     void HandleShooting()
     {
-        if (Time.time >= nextFireTime) // Ensure shooting is at the correct rate
+        if (Time.time >= nextFireTime)
         {
-            Shoot(); // Fire a shot
-            nextFireTime = Time.time + fireRate; // Set the next fire time
+            Shoot();
+            nextFireTime = Time.time + fireRate;
         }
 
-        PlayShootingParticles(); // Play particles while shooting
+        PlayShootingParticles();
     }
 
     void Shoot()
@@ -93,12 +98,13 @@ public class RapidFireShooter2D : MonoBehaviour
 
             ShowMuzzleFlash();
             ChangeGunSprite(firingGunSprite);
-
-            // Play the gunfire sound every time a bullet is fired
             PlayGunfireSound();
 
             Destroy(projectile, 5f);
             Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
+
+            // Eject casing for every shot
+            EjectCasing();
         }
         else
         {
@@ -124,7 +130,7 @@ public class RapidFireShooter2D : MonoBehaviour
     {
         if (shootingParticles != null && !shootingParticles.isPlaying)
         {
-            shootingParticles.Play(); // Start the particle system when shooting
+            shootingParticles.Play();
         }
     }
 
@@ -132,7 +138,7 @@ public class RapidFireShooter2D : MonoBehaviour
     {
         if (shootingParticles != null && shootingParticles.isPlaying)
         {
-            shootingParticles.Stop(); // Stop the particle system when the player stops shooting
+            shootingParticles.Stop();
         }
     }
 
@@ -153,7 +159,6 @@ public class RapidFireShooter2D : MonoBehaviour
         ChangeGunSprite(idleGunSprite);
     }
 
-    // Play the gunfire sound
     void PlayGunfireSound()
     {
         if (gunfireSound != null && audioSource != null)
@@ -163,6 +168,51 @@ public class RapidFireShooter2D : MonoBehaviour
         else
         {
             Debug.LogWarning("Gunfire sound is not assigned or AudioSource is missing!");
+        }
+    }
+
+    void EjectCasing()
+    {
+        if (casingPrefab != null && firingPoint != null)
+        {
+            // Offset position for the casing ejection
+            Vector3 casingPosition = firingPoint.position + firingPoint.TransformDirection(new Vector3(-0.2f, -0.1f, 0f)); // Adjust as needed
+            GameObject casing = Instantiate(casingPrefab, casingPosition, Quaternion.Euler(0, 0, Random.Range(0f, 360f)));
+
+            // Apply a force to the casing to simulate ejection with spread
+            Rigidbody2D casingRb = casing.GetComponent<Rigidbody2D>();
+            if (casingRb != null)
+            {
+                // Adjust direction with random spread
+                float spreadAngle = Random.Range(-15f, 15f); // Spread angle range in degrees
+                Vector2 baseDirection = (Vector2.left + Vector2.down).normalized; // Base ejection direction
+                Vector2 spreadDirection = Quaternion.Euler(0, 0, spreadAngle) * baseDirection;
+
+                casingRb.AddForce(firingPoint.TransformDirection(spreadDirection * casingEjectForce), ForceMode2D.Impulse);
+                casingRb.AddTorque(Random.Range(-10f, 10f)); // Add random spin
+
+                // Freeze movement after a delay
+                StartCoroutine(FreezeCasingMovement(casingRb, casingFreezeTime));
+            }
+
+            Destroy(casing, casingLifetime); // Destroy the casing after its lifetime
+        }
+        else
+        {
+            Debug.LogWarning("Casing Prefab or Firing Point is not set!");
+        }
+    }
+
+
+    IEnumerator FreezeCasingMovement(Rigidbody2D casingRb, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (casingRb != null)
+        {
+            casingRb.linearVelocity = Vector2.zero;
+            casingRb.angularVelocity = 0f;
+            casingRb.isKinematic = true;
         }
     }
 }
