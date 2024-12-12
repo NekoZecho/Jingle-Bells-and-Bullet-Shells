@@ -112,7 +112,7 @@ public class RapidFireShooter2D : MonoBehaviour
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = direction * projectileSpeed;
+                rb.linearVelocity = direction * projectileSpeed;
             }
 
             ShowMuzzleFlash();
@@ -239,7 +239,7 @@ public class RapidFireShooter2D : MonoBehaviour
 
         if (casingRb != null)
         {
-            casingRb.velocity = Vector2.zero;
+            casingRb.linearVelocity = Vector2.zero;
             casingRb.angularVelocity = 0f;
             casingRb.isKinematic = true;
         }
