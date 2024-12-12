@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 6f660f514f5bec8498a8d78dbc963f5e
+guid: 74f83388a6287cf458b4b3485f1c153e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3968611027135810173
-    second: M4A1 Fire (Festivized)_0
-  - first:
-      213: -1572849955330619629
-    second: M4A1 Fire (Festivized)_1
+      213: 1041890796024558905
+    second: Remington 870 No Hands (Regular)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: M4A1 Fire (Festivized)_0
+      name: Remington 870 No Hands (Regular)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 64
-        height: 48
+        x: 7
+        y: 15
+        width: 52
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7ac02cd3b6531730800000000000000
-      internalID: 3968611027135810173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: M4A1 Fire (Festivized)_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31787878c4d1c2ae0800000000000000
-      internalID: -1572849955330619629
+      spriteID: 935fac7a82a857e00800000000000000
+      internalID: 1041890796024558905
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 60234588364861646851b43d768f788f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      M4A1 Fire (Festivized)_0: 3968611027135810173
-      M4A1 Fire (Festivized)_1: -1572849955330619629
+      Remington 870 No Hands (Regular)_0: 1041890796024558905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
