@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2947ca48da4c0dc4da0e98f8353af6a4
+guid: 6f660f514f5bec8498a8d78dbc963f5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3549678237727299336
-    second: M1911 Fire (Regular)_0
+      213: 3968611027135810173
+    second: M4A1 Fire (Festivized)_0
   - first:
-      213: -488544338023279739
-    second: M1911 Fire (Regular)_1
+      213: -1572849955330619629
+    second: M4A1 Fire (Festivized)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: M1911 Fire (Regular)_0
+      name: M4A1 Fire (Festivized)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f8645523720dbec0800000000000000
-      internalID: -3549678237727299336
+      spriteID: d7ac02cd3b6531730800000000000000
+      internalID: 3968611027135810173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: M1911 Fire (Regular)_1
+      name: M4A1 Fire (Festivized)_1
       rect:
         serializedVersion: 2
         x: 0
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 583181353875839f0800000000000000
-      internalID: -488544338023279739
+      spriteID: 31787878c4d1c2ae0800000000000000
+      internalID: -1572849955330619629
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: eb8bb083c827f5e4f8def7d65d44fa40
+    spriteID: a8b5c45cea41adb4984c8eb455180a15
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      M1911 Fire (Regular)_0: -3549678237727299336
-      M1911 Fire (Regular)_1: -488544338023279739
+      M4A1 Fire (Festivized)_0: 3968611027135810173
+      M4A1 Fire (Festivized)_1: -1572849955330619629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
