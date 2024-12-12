@@ -42,6 +42,9 @@ public class RapidFireShooter2D : MonoBehaviour
     public bool Reload = false; // Track reload state
     public float reloadTime = 2f; // Time to reload (in seconds)
 
+    [Header("Shooting Animation Settings")]
+    public string shootTriggerName = "Shoot"; // Trigger name for the shooting animation
+
     private float nextFireTime = 0f;
 
     void Start()
@@ -109,12 +112,15 @@ public class RapidFireShooter2D : MonoBehaviour
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.linearVelocity = direction * projectileSpeed;
+                rb.velocity = direction * projectileSpeed;
             }
 
             ShowMuzzleFlash();
             ChangeGunSprite(firingGunSprite);
             PlayGunfireSound();
+
+            // Play shooting animation
+            PlayShootingAnimation();
 
             Destroy(projectile, 5f);
             Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
@@ -187,6 +193,18 @@ public class RapidFireShooter2D : MonoBehaviour
         }
     }
 
+    void PlayShootingAnimation()
+    {
+        if (gunAnimator != null && !string.IsNullOrEmpty(shootTriggerName))
+        {
+            gunAnimator.SetTrigger(shootTriggerName);
+        }
+        else
+        {
+            Debug.LogWarning("Gun Animator or Shoot Trigger is not set!");
+        }
+    }
+
     void EjectCasing()
     {
         if (casingPrefab != null && firingPoint != null)
@@ -221,7 +239,7 @@ public class RapidFireShooter2D : MonoBehaviour
 
         if (casingRb != null)
         {
-            casingRb.linearVelocity = Vector2.zero;
+            casingRb.velocity = Vector2.zero;
             casingRb.angularVelocity = 0f;
             casingRb.isKinematic = true;
         }
