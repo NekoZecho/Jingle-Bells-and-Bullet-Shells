@@ -9,6 +9,7 @@ public class EnemyShooter2D : MonoBehaviour
     public float projectileSpeed = 10f;
     public float fireRate = 0.2f;
     public float bulletSpreadAngle = 5f;
+    public float shootingRange = 10f; // Shooting range (radius)
 
     [Header("Target Settings")]
     public Transform playerTarget;
@@ -64,7 +65,13 @@ public class EnemyShooter2D : MonoBehaviour
         if (playerTarget != null)
         {
             AimAtPlayer();
-            HandleShooting();
+
+            // Check if player is within shooting range
+            float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
+            if (distanceToPlayer <= shootingRange)
+            {
+                HandleShooting();
+            }
         }
     }
 
@@ -200,6 +207,16 @@ public class EnemyShooter2D : MonoBehaviour
             casingRb.linearVelocity = Vector2.zero;
             casingRb.angularVelocity = 0f;
             casingRb.isKinematic = true;
+        }
+    }
+
+    // Draw the shooting range radius in the Scene view
+    void OnDrawGizmos()
+    {
+        if (shootingRange > 0)
+        {
+            Gizmos.color = Color.red; // Set the color of the radius
+            Gizmos.DrawWireSphere(firingPoint.position, shootingRange); // Draw the wireframe circle
         }
     }
 }

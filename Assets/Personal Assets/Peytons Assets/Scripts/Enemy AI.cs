@@ -6,6 +6,8 @@ public class TopDownEnemyAI : MonoBehaviour
     [Header("Chase Settings")]
     public float speed = 3f;
     public float detectionRange = 5f;
+    public float minimumDistance = 1f; // Minimum distance from the player
+    public float radiusBuffer = 0.1f; // Small buffer for the radius line
 
     [Header("Health Settings")]
     public int maxHealth = 100;
@@ -43,10 +45,32 @@ public class TopDownEnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(transform.position, player.position) <= detectionRange)
-            ChasePlayer();
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // Check if player is within detection range
+        if (distanceToPlayer <= detectionRange)
+        {
+            // Check if the player is on the border of the radius
+            if (distanceToPlayer > minimumDistance - radiusBuffer && distanceToPlayer < minimumDistance + radiusBuffer)
+            {
+                // Stop the enemy from moving if the player is on the radius line
+                rb.linearVelocity = Vector2.zero;
+            }
+            else if (distanceToPlayer > minimumDistance)
+            {
+                // Move towards the player if they are outside of minimum distance
+                ChasePlayer();
+            }
+            else
+            {
+                // Move away from the player if they are within the minimum distance
+                MoveAwayFromPlayer();
+            }
+        }
         else
-            rb.linearVelocity = Vector2.zero;
+        {
+            rb.linearVelocity = Vector2.zero;  // Stop if the player is out of detection range
+        }
     }
 
     private void ChasePlayer()
@@ -54,8 +78,25 @@ public class TopDownEnemyAI : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
 
-        // Flip the sprite and the weapon
-        bool flipX = direction.x < 0;
+        // Flip the sprite based on player's position
+        bool flipX = player.position.x < transform.position.x;
+        spriteRenderer.flipX = flipX;
+
+        if (weapon)
+        {
+            Vector3 weaponScale = weapon.localScale;
+            weaponScale.y = flipX ? -Mathf.Abs(weaponScale.y) : Mathf.Abs(weaponScale.y);
+            weapon.localScale = weaponScale;
+        }
+    }
+
+    private void MoveAwayFromPlayer()
+    {
+        Vector2 direction = (transform.position - player.position).normalized;
+        rb.linearVelocity = direction * speed;
+
+        // Flip the sprite based on player's position
+        bool flipX = player.position.x < transform.position.x;
         spriteRenderer.flipX = flipX;
 
         if (weapon)
@@ -116,5 +157,8 @@ public class TopDownEnemyAI : MonoBehaviour
 
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, hitSpawnRadius);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, minimumDistance);
     }
 }

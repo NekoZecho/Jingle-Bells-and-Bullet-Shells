@@ -191,27 +191,23 @@ public class RapidFireShooter2D : MonoBehaviour
     {
         if (casingPrefab != null && firingPoint != null)
         {
-            // Offset position for the casing ejection
             Vector3 casingPosition = firingPoint.position + firingPoint.TransformDirection(new Vector3(-0.2f, -0.1f, 0f)); // Adjust as needed
             GameObject casing = Instantiate(casingPrefab, casingPosition, Quaternion.Euler(0, 0, Random.Range(0f, 360f)));
 
-            // Apply a force to the casing to simulate ejection with spread
             Rigidbody2D casingRb = casing.GetComponent<Rigidbody2D>();
             if (casingRb != null)
             {
-                // Adjust direction with random spread
-                float spreadAngle = Random.Range(-15f, 15f); // Spread angle range in degrees
-                Vector2 baseDirection = (Vector2.left + Vector2.down).normalized; // Base ejection direction
+                float spreadAngle = Random.Range(-15f, 15f);
+                Vector2 baseDirection = (Vector2.left + Vector2.down).normalized;
                 Vector2 spreadDirection = Quaternion.Euler(0, 0, spreadAngle) * baseDirection;
 
                 casingRb.AddForce(firingPoint.TransformDirection(spreadDirection * casingEjectForce), ForceMode2D.Impulse);
-                casingRb.AddTorque(Random.Range(-10f, 10f)); // Add random spin
+                casingRb.AddTorque(Random.Range(-10f, 10f));
 
-                // Freeze movement after a delay
                 StartCoroutine(FreezeCasingMovement(casingRb, casingFreezeTime));
             }
 
-            Destroy(casing, casingLifetime); // Destroy the casing after its lifetime
+            Destroy(casing, casingLifetime);
         }
         else
         {
@@ -231,15 +227,14 @@ public class RapidFireShooter2D : MonoBehaviour
         }
     }
 
-    // Coroutine to handle reload animation
     IEnumerator ReloadAnimation()
     {
         Reload = true; // Disable shooting
-        gunAnimator.SetTrigger(reloadTriggerName); // Trigger reload animation
+        gunAnimator.SetBool("Reload", true); // Start reload animation
 
-        // Wait for the specified reload time (e.g., 2 seconds)
         yield return new WaitForSeconds(reloadTime);
 
-        Reload = false; // Enable shooting again
+        Reload = false; // Re-enable shooting
+        gunAnimator.SetBool("Reload", false); // End reload animation
     }
 }
