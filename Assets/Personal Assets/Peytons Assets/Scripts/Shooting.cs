@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class RapidFireShooter2D : MonoBehaviour
 {
@@ -39,7 +39,7 @@ public class RapidFireShooter2D : MonoBehaviour
     [Header("Reload Settings")]
     public Animator gunAnimator; // Reference to the Animator for reload animation
     public string reloadTriggerName = "Reload"; // Trigger name for the reload animation
-    public bool Reload = false; // Track reload state
+    public bool isReloading = false; // Track reload state
     public float reloadTime = 2f; // Time to reload (in seconds)
 
     [Header("Shooting Animation Settings")]
@@ -61,24 +61,30 @@ public class RapidFireShooter2D : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+
+        // Ensure reload animation doesn't play on startup
+        if (gunAnimator != null)
+        {
+            gunAnimator.SetBool("Reload", false); // Reset reload state
+        }
     }
 
     void Update()
     {
-        // Check for reload input (R key)
-        if (Input.GetKeyDown(KeyCode.R) && !Reload)
+        // Check for reload input (R key) and if not already reloading
+        if (Input.GetKeyDown(KeyCode.R) && !isReloading)
         {
             StartCoroutine(ReloadAnimation());
         }
 
-        // Check if player is holding fire button and not reloading
-        if (!Reload)
+        // If not reloading, handle firing input
+        if (!isReloading)
         {
-            if (holdToFire && Input.GetMouseButton(0))
+            if (holdToFire && Input.GetMouseButton(0)) // If holding to fire
             {
                 HandleShooting();
             }
-            else if (!holdToFire && Input.GetMouseButtonDown(0))
+            else if (!holdToFire && Input.GetMouseButtonDown(0)) // If pressing once to fire
             {
                 HandleShooting();
             }
@@ -112,7 +118,7 @@ public class RapidFireShooter2D : MonoBehaviour
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = direction * projectileSpeed;
+                rb.linearVelocity = direction * projectileSpeed;
             }
 
             ShowMuzzleFlash();
@@ -197,7 +203,7 @@ public class RapidFireShooter2D : MonoBehaviour
     {
         if (gunAnimator != null && !string.IsNullOrEmpty(shootTriggerName))
         {
-            gunAnimator.SetTrigger(shootTriggerName);
+            gunAnimator.SetTrigger(shootTriggerName); // Play the shoot animation
         }
         else
         {
@@ -239,7 +245,7 @@ public class RapidFireShooter2D : MonoBehaviour
 
         if (casingRb != null)
         {
-            casingRb.velocity = Vector2.zero;
+            casingRb.linearVelocity = Vector2.zero;
             casingRb.angularVelocity = 0f;
             casingRb.isKinematic = true;
         }
@@ -247,12 +253,28 @@ public class RapidFireShooter2D : MonoBehaviour
 
     IEnumerator ReloadAnimation()
     {
-        Reload = true; // Disable shooting
+        isReloading = true; // Disable shooting
         gunAnimator.SetBool("Reload", true); // Start reload animation
 
         yield return new WaitForSeconds(reloadTime);
 
-        Reload = false; // Re-enable shooting
+        isReloading = false; // Re-enable shooting
         gunAnimator.SetBool("Reload", false); // End reload animation
+    }
+
+    // Call this when switching to this weapon
+    public void OnWeaponSwitch()
+    {
+        if (gunAnimator != null)
+        {
+            // Reset the reload state when switching weapons
+            gunAnimator.SetBool("Reload", false);
+        }
+
+        // Optionally reset gun sprite to idle or desired state
+        if (gunSpriteRenderer != null && idleGunSprite != null)
+        {
+            ChangeGunSprite(idleGunSprite); // Make sure the weapon is in an idle state when switching
+        }
     }
 }

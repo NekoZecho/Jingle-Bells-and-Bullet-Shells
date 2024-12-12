@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class TopDownEnemyAI : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class TopDownEnemyAI : MonoBehaviour
     [Header("Components")]
     public Transform player;
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer enemySpriteRenderer;  // Enemy's SpriteRenderer
+    private SpriteRenderer weaponSpriteRenderer;  // Weapon's SpriteRenderer
 
     [Header("Weapon Settings")]
     public Transform weapon; // Weapon transform to flip with the player
@@ -31,11 +33,18 @@ public class TopDownEnemyAI : MonoBehaviour
     public float hitSpriteDuration = 0.2f;
     private Sprite originalSprite;
 
+    [Header("Enemy Hit Color Change")]
+    public float redDuration = 1f; // Duration for turning red when hit
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        originalSprite = spriteRenderer.sprite;
+
+        // Get the SpriteRenderer components for the enemy and weapon
+        enemySpriteRenderer = GetComponent<SpriteRenderer>();  // Assuming the enemy itself has a SpriteRenderer
+        weaponSpriteRenderer = weapon.GetComponent<SpriteRenderer>();  // Weapon's SpriteRenderer
+
+        originalSprite = enemySpriteRenderer.sprite;
 
         if (!player)
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -78,14 +87,15 @@ public class TopDownEnemyAI : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
 
-        // Flip the sprite based on player's position
+        // Flip the enemy sprite based on the player's position
         bool flipX = player.position.x < transform.position.x;
-        spriteRenderer.flipX = flipX;
+        enemySpriteRenderer.flipX = flipX;
 
+        // Flip the weapon's Y-axis based on the player's position
         if (weapon)
         {
             Vector3 weaponScale = weapon.localScale;
-            weaponScale.y = flipX ? -Mathf.Abs(weaponScale.y) : Mathf.Abs(weaponScale.y);
+            weaponScale.y = flipX ? -Mathf.Abs(weaponScale.y) : Mathf.Abs(weaponScale.y);  // Flip on Y-axis
             weapon.localScale = weaponScale;
         }
     }
@@ -95,17 +105,19 @@ public class TopDownEnemyAI : MonoBehaviour
         Vector2 direction = (transform.position - player.position).normalized;
         rb.linearVelocity = direction * speed;
 
-        // Flip the sprite based on player's position
+        // Flip the enemy sprite based on the player's position
         bool flipX = player.position.x < transform.position.x;
-        spriteRenderer.flipX = flipX;
+        enemySpriteRenderer.flipX = flipX;
 
+        // Flip the weapon's Y-axis based on the player's position
         if (weapon)
         {
             Vector3 weaponScale = weapon.localScale;
-            weaponScale.y = flipX ? -Mathf.Abs(weaponScale.y) : Mathf.Abs(weaponScale.y);
+            weaponScale.y = flipX ? -Mathf.Abs(weaponScale.y) : Mathf.Abs(weaponScale.y);  // Flip on Y-axis
             weapon.localScale = weaponScale;
         }
     }
+
 
     public void TakeDamage(int damage)
     {
@@ -122,6 +134,9 @@ public class TopDownEnemyAI : MonoBehaviour
             Die();
         else if (hitSprites.Count > 0)
             StartCoroutine(TemporarySpriteChange());
+
+        // Trigger the red color change effect
+        StartCoroutine(ChangeColorRed());
     }
 
     private void Die()
@@ -134,9 +149,23 @@ public class TopDownEnemyAI : MonoBehaviour
     private IEnumerator<WaitForSeconds> TemporarySpriteChange()
     {
         // Choose a random hit sprite from the list
-        spriteRenderer.sprite = hitSprites[Random.Range(0, hitSprites.Count)];
+        enemySpriteRenderer.sprite = hitSprites[Random.Range(0, hitSprites.Count)];
         yield return new WaitForSeconds(hitSpriteDuration);
-        spriteRenderer.sprite = originalSprite;
+        enemySpriteRenderer.sprite = originalSprite;
+    }
+
+    private IEnumerator ChangeColorRed()
+    {
+        // Change the color of the enemy's SpriteRenderer and weapon's SpriteRenderer to red
+        enemySpriteRenderer.color = Color.red;
+        weaponSpriteRenderer.color = Color.red;
+
+        // Wait for the duration before reverting to the original color
+        yield return new WaitForSeconds(redDuration);
+
+        // Revert the color back to normal
+        enemySpriteRenderer.color = Color.white;
+        weaponSpriteRenderer.color = Color.white;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
