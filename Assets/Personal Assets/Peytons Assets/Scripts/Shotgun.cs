@@ -6,11 +6,11 @@ public class ShotgunShooter2D : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform firingPoint;
     public float projectileSpeed = 10f;
-    public float fireRate = 0.5f; // Increased fire rate for shotgun
-    public float bulletSpreadAngle = 15f; // Spread for shotgun
+    public float fireRate = 0.5f;
+    public float bulletSpreadAngle = 15f;
 
     [Header("Fire Mode Settings")]
-    public bool holdToFire = true; // Enable hold-to-fire functionality
+    public bool holdToFire = true;
 
     [Header("Muzzle Flash Settings")]
     public GameObject muzzleFlashPrefab;
@@ -26,8 +26,11 @@ public class ShotgunShooter2D : MonoBehaviour
     public ParticleSystem shootingParticles;
 
     [Header("Audio Settings")]
-    public AudioClip gunfireSound; // Sound effect for firing
-    private AudioSource audioSource; // Audio source component
+    public AudioClip gunfireSound;
+    private AudioSource audioSource;
+
+    [Header("Animator Settings")]
+    public Animator gunAnimator;  // Reference to the Animator
 
     private float nextFireTime = 0f;
 
@@ -37,15 +40,18 @@ public class ShotgunShooter2D : MonoBehaviour
         {
             shootingParticles.Stop();
             var mainModule = shootingParticles.main;
-            mainModule.prewarm = true; // Enable prewarm
+            mainModule.prewarm = true;
         }
 
-        // Get the AudioSource component
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
-            // If no AudioSource, add one
             audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        if (gunAnimator == null)
+        {
+            Debug.LogWarning("Animator not assigned!");
         }
     }
 
@@ -62,47 +68,48 @@ public class ShotgunShooter2D : MonoBehaviour
         else
         {
             StopShootingParticles();
+            gunAnimator.SetBool("IsReloading", false);  // Reset reloading if not shooting
         }
     }
 
     void HandleShooting()
     {
-        if (Time.time >= nextFireTime) // Ensure shooting is at the correct rate
+        if (Time.time >= nextFireTime)
         {
-            Shoot(); // Fire a shot
-            nextFireTime = Time.time + fireRate; // Set the next fire time
+            Shoot();
+            nextFireTime = Time.time + fireRate;
         }
 
-        PlayShootingParticles(); // Play particles while shooting
+        PlayShootingParticles();
     }
 
     void Shoot()
     {
         if (projectilePrefab != null && firingPoint != null)
         {
+            // Trigger the shooting animation
+            gunAnimator.SetTrigger("Shoot");
+
             // Fire 3 bullets with spread
             for (int i = -1; i <= 1; i++)
             {
                 GameObject projectile = Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);
-
-                // Calculate the spread based on the loop index (-1, 0, 1)
                 float spread = i * bulletSpreadAngle;
                 Vector2 direction = Quaternion.Euler(0, 0, spread) * firingPoint.right;
 
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {
-                    rb.linearVelocity = direction * projectileSpeed; // Apply velocity
+                    rb.linearVelocity = direction * projectileSpeed;
                 }
 
-                Destroy(projectile, 5f); // Destroy after 5 seconds
+                Destroy(projectile, 5f);
 
-                // Play muzzle flash, sound, and gun sprite changes
                 ShowMuzzleFlash();
                 ChangeGunSprite(firingGunSprite);
                 PlayGunfireSound();
 
-                Invoke(nameof(ResetGunSprite), gunFireSpriteDuration); // Reset gun sprite after shooting
+                Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
             }
         }
         else
@@ -119,17 +126,13 @@ public class ShotgunShooter2D : MonoBehaviour
             muzzleFlash.transform.SetParent(firingPoint);
             Destroy(muzzleFlash, muzzleFlashDuration);
         }
-        else
-        {
-            Debug.LogWarning("Muzzle Flash Prefab or Firing Point is not set!");
-        }
     }
 
     void PlayShootingParticles()
     {
         if (shootingParticles != null && !shootingParticles.isPlaying)
         {
-            shootingParticles.Play(); // Start the particle system when shooting
+            shootingParticles.Play();
         }
     }
 
@@ -137,7 +140,7 @@ public class ShotgunShooter2D : MonoBehaviour
     {
         if (shootingParticles != null && shootingParticles.isPlaying)
         {
-            shootingParticles.Stop(); // Stop the particle system when the player stops shooting
+            shootingParticles.Stop();
         }
     }
 
@@ -147,10 +150,6 @@ public class ShotgunShooter2D : MonoBehaviour
         {
             gunSpriteRenderer.sprite = newSprite;
         }
-        else
-        {
-            Debug.LogWarning("Gun SpriteRenderer or Sprite is not set!");
-        }
     }
 
     void ResetGunSprite()
@@ -158,16 +157,11 @@ public class ShotgunShooter2D : MonoBehaviour
         ChangeGunSprite(idleGunSprite);
     }
 
-    // Play the gunfire sound
     void PlayGunfireSound()
     {
         if (gunfireSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(gunfireSound);
-        }
-        else
-        {
-            Debug.LogWarning("Gunfire sound is not assigned or AudioSource is missing!");
         }
     }
 }
