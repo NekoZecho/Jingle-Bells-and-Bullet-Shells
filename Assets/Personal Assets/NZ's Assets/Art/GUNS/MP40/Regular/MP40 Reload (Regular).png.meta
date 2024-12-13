@@ -1,0 +1,965 @@
+fileFormatVersion: 2
+guid: fbdbdeb94fa009b43b5fbe0dd73aae6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7092637819204043640
+    second: MP40 Reload (Regular)_0
+  - first:
+      213: 2282764655724758729
+    second: MP40 Reload (Regular)_1
+  - first:
+      213: 1298051635303689523
+    second: MP40 Reload (Regular)_2
+  - first:
+      213: -6863972493119277472
+    second: MP40 Reload (Regular)_3
+  - first:
+      213: 1506621353050084923
+    second: MP40 Reload (Regular)_4
+  - first:
+      213: -9178239217133278675
+    second: MP40 Reload (Regular)_5
+  - first:
+      213: -732864613171960738
+    second: MP40 Reload (Regular)_6
+  - first:
+      213: 6179923572737033280
+    second: MP40 Reload (Regular)_7
+  - first:
+      213: 3869499949881924868
+    second: MP40 Reload (Regular)_8
+  - first:
+      213: -497799329744895363
+    second: MP40 Reload (Regular)_9
+  - first:
+      213: 6463197891387226413
+    second: MP40 Reload (Regular)_10
+  - first:
+      213: -3912570457392596240
+    second: MP40 Reload (Regular)_11
+  - first:
+      213: 8898578834327527698
+    second: MP40 Reload (Regular)_12
+  - first:
+      213: 7957811108850814364
+    second: MP40 Reload (Regular)_13
+  - first:
+      213: 4093848779619272058
+    second: MP40 Reload (Regular)_14
+  - first:
+      213: 6182153537192642633
+    second: MP40 Reload (Regular)_15
+  - first:
+      213: -8706769671367082924
+    second: MP40 Reload (Regular)_16
+  - first:
+      213: -2621609972008810027
+    second: MP40 Reload (Regular)_17
+  - first:
+      213: 1336560479097062010
+    second: MP40 Reload (Regular)_18
+  - first:
+      213: -6714021611737566584
+    second: MP40 Reload (Regular)_19
+  - first:
+      213: 3675965296783858470
+    second: MP40 Reload (Regular)_20
+  - first:
+      213: 6177391457406988200
+    second: MP40 Reload (Regular)_21
+  - first:
+      213: -8461637349629881344
+    second: MP40 Reload (Regular)_22
+  - first:
+      213: -6023395563917551706
+    second: MP40 Reload (Regular)_23
+  - first:
+      213: 547059020513154864
+    second: MP40 Reload (Regular)_24
+  - first:
+      213: 8507152119399669755
+    second: MP40 Reload (Regular)_25
+  - first:
+      213: 6406400960775023657
+    second: MP40 Reload (Regular)_26
+  - first:
+      213: 3623616209636393212
+    second: MP40 Reload (Regular)_27
+  - first:
+      213: 2007249276662763795
+    second: MP40 Reload (Regular)_28
+  - first:
+      213: -4797482666886482941
+    second: MP40 Reload (Regular)_29
+  - first:
+      213: -7960145181397654970
+    second: MP40 Reload (Regular)_30
+  - first:
+      213: -8957989462708573021
+    second: MP40 Reload (Regular)_31
+  - first:
+      213: 1827201926002427352
+    second: MP40 Reload (Regular)_32
+  - first:
+      213: 5168159936714202982
+    second: MP40 Reload (Regular)_33
+  - first:
+      213: 9145511060971121338
+    second: MP40 Reload (Regular)_34
+  - first:
+      213: -4278882458203148134
+    second: MP40 Reload (Regular)_35
+  - first:
+      213: 2871039011475298362
+    second: MP40 Reload (Regular)_36
+  - first:
+      213: -6093064673753670818
+    second: MP40 Reload (Regular)_37
+  - first:
+      213: 5487099024101212907
+    second: MP40 Reload (Regular)_38
+  - first:
+      213: -491540907750659199
+    second: MP40 Reload (Regular)_39
+  - first:
+      213: -6823208973807866869
+    second: MP40 Reload (Regular)_40
+  - first:
+      213: -1693231559416747371
+    second: MP40 Reload (Regular)_41
+  - first:
+      213: -7749235045026348548
+    second: MP40 Reload (Regular)_42
+  - first:
+      213: -1259608439935712534
+    second: MP40 Reload (Regular)_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c77d95b73e19d90800000000000000
+      internalID: -7092637819204043640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c68a4a1c520eaf10800000000000000
+      internalID: 2282764655724758729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d246eb51b930210800000000000000
+      internalID: 1298051635303689523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066b29762654eb0a0800000000000000
+      internalID: -6863972493119277472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36919f532898e410800000000000000
+      internalID: 1506621353050084923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a26377f0850a080800000000000000
+      internalID: -9178239217133278675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e546e67648754d5f0800000000000000
+      internalID: -732864613171960738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044cd0c2fbf73c550800000000000000
+      internalID: 6179923572737033280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d9a13f3b933b530800000000000000
+      internalID: 3869499949881924868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72c025a5267719f0800000000000000
+      internalID: -497799329744895363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29703d1d34e1b950800000000000000
+      internalID: 6463197891387226413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa3d6016e1c3b9c0800000000000000
+      internalID: -3912570457392596240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211e6e99d4a1e7b70800000000000000
+      internalID: 8898578834327527698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9dc5bc8a03df6e60800000000000000
+      internalID: 7957811108850814364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a758f5166c540d830800000000000000
+      internalID: 4093848779619272058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948ca4b33eb6bc550800000000000000
+      internalID: 6182153537192642633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c35054d175b2780800000000000000
+      internalID: -8706769671367082924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d90bcece9b2e9bd0800000000000000
+      internalID: -2621609972008810027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a720861acaa6c8210800000000000000
+      internalID: 1336560479097062010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8823612aae003d2a0800000000000000
+      internalID: -6714021611737566584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b177916f6a30330800000000000000
+      internalID: 3675965296783858470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afa6412dc08ab550800000000000000
+      internalID: 6177391457406988200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004122589a9329a80800000000000000
+      internalID: -8461637349629881344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7d70fd5a9986ca0800000000000000
+      internalID: -6023395563917551706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0371cdcd74b879700800000000000000
+      internalID: 547059020513154864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff570f97c97f0670800000000000000
+      internalID: 8507152119399669755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c67b33bbb18e850800000000000000
+      internalID: 6406400960775023657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf089b17ebba94230800000000000000
+      internalID: 3623616209636393212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311d42f059e2bdb10800000000000000
+      internalID: 2007249276662763795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP40 Reload (Regular)_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3043320ceeaeb6db0800000000000000
+      internalID: -4797482666886482941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8ecf61df517508a4db35f2d834836b8a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MP40 Reload (Regular)_0: -7092637819204043640
+      MP40 Reload (Regular)_1: 2282764655724758729
+      MP40 Reload (Regular)_10: 6463197891387226413
+      MP40 Reload (Regular)_11: -3912570457392596240
+      MP40 Reload (Regular)_12: 8898578834327527698
+      MP40 Reload (Regular)_13: 7957811108850814364
+      MP40 Reload (Regular)_14: 4093848779619272058
+      MP40 Reload (Regular)_15: 6182153537192642633
+      MP40 Reload (Regular)_16: -8706769671367082924
+      MP40 Reload (Regular)_17: -2621609972008810027
+      MP40 Reload (Regular)_18: 1336560479097062010
+      MP40 Reload (Regular)_19: -6714021611737566584
+      MP40 Reload (Regular)_2: 1298051635303689523
+      MP40 Reload (Regular)_20: 3675965296783858470
+      MP40 Reload (Regular)_21: 6177391457406988200
+      MP40 Reload (Regular)_22: -8461637349629881344
+      MP40 Reload (Regular)_23: -6023395563917551706
+      MP40 Reload (Regular)_24: 547059020513154864
+      MP40 Reload (Regular)_25: 8507152119399669755
+      MP40 Reload (Regular)_26: 6406400960775023657
+      MP40 Reload (Regular)_27: 3623616209636393212
+      MP40 Reload (Regular)_28: 2007249276662763795
+      MP40 Reload (Regular)_29: -4797482666886482941
+      MP40 Reload (Regular)_3: -6863972493119277472
+      MP40 Reload (Regular)_4: 1506621353050084923
+      MP40 Reload (Regular)_5: -9178239217133278675
+      MP40 Reload (Regular)_6: -732864613171960738
+      MP40 Reload (Regular)_7: 6179923572737033280
+      MP40 Reload (Regular)_8: 3869499949881924868
+      MP40 Reload (Regular)_9: -497799329744895363
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
