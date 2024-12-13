@@ -3,35 +3,30 @@ using UnityEngine;
 public class InventorySystem : MonoBehaviour
 {
     // Assign the objects you want to control in the inspector
-    public GameObject[] inventoryObjects = new GameObject[4];
+    public GameObject[] inventoryObjects = new GameObject[9];
 
     void Start()
     {
         // Initially disable all inventory objects
         foreach (GameObject obj in inventoryObjects)
         {
-            obj.SetActive(false);
+            if (obj != null) // Check to avoid errors if some elements are not assigned
+            {
+                obj.SetActive(false);
+            }
         }
     }
 
     void Update()
     {
         // Check for key inputs and enable the corresponding object while disabling others
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        for (int i = 0; i < inventoryObjects.Length; i++)
         {
-            SwitchObject(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SwitchObject(1);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            SwitchObject(2);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            SwitchObject(3);
+            // Keys 1–9 correspond to KeyCode.Alpha1 to KeyCode.Alpha9
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+            {
+                SwitchObject(i);
+            }
         }
     }
 
@@ -41,11 +36,14 @@ public class InventorySystem : MonoBehaviour
         // Disable all objects first
         foreach (GameObject obj in inventoryObjects)
         {
-            obj.SetActive(false);
+            if (obj != null)
+            {
+                obj.SetActive(false);
+            }
         }
 
         // Enable the selected object
-        if (index >= 0 && index < inventoryObjects.Length)
+        if (index >= 0 && index < inventoryObjects.Length && inventoryObjects[index] != null)
         {
             inventoryObjects[index].SetActive(true);
         }

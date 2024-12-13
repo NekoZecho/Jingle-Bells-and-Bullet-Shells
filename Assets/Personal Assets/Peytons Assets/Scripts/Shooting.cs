@@ -42,20 +42,14 @@ public class RapidFireShooter2D : MonoBehaviour
     public bool isReloading = false; // Track reload state
     public float reloadTime = 2f; // Time to reload (in seconds)
 
-    [Header("Shooting Animation Settings")]
-    public string shootTriggerName = "Shoot"; // Trigger name for the shooting animation
+    private int currentBullets;
+    public int maxBullets = 10;
 
     private float nextFireTime = 0f;
 
     void Start()
     {
-        if (shootingParticles != null)
-        {
-            shootingParticles.Stop();
-            var mainModule = shootingParticles.main;
-            mainModule.prewarm = true;
-        }
-
+        currentBullets = maxBullets; // Initialize the bullet count
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -66,6 +60,13 @@ public class RapidFireShooter2D : MonoBehaviour
         if (gunAnimator != null)
         {
             gunAnimator.SetBool("Reload", false); // Reset reload state
+        }
+
+        if (shootingParticles != null)
+        {
+            shootingParticles.Stop();
+            var mainModule = shootingParticles.main;
+            mainModule.prewarm = true;
         }
     }
 
@@ -97,13 +98,11 @@ public class RapidFireShooter2D : MonoBehaviour
 
     void HandleShooting()
     {
-        if (Time.time >= nextFireTime)
+        if (currentBullets > 0 && Time.time >= nextFireTime)
         {
             Shoot();
             nextFireTime = Time.time + fireRate;
         }
-
-        PlayShootingParticles();
     }
 
     void Shoot()
@@ -125,14 +124,13 @@ public class RapidFireShooter2D : MonoBehaviour
             ChangeGunSprite(firingGunSprite);
             PlayGunfireSound();
 
-            // Play shooting animation
-            PlayShootingAnimation();
-
             Destroy(projectile, 5f);
             Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
 
             // Eject casing for every shot
             EjectCasing();
+
+            currentBullets--; // Reduce the bullet count after shooting
         }
         else
         {
@@ -199,18 +197,6 @@ public class RapidFireShooter2D : MonoBehaviour
         }
     }
 
-    void PlayShootingAnimation()
-    {
-        if (gunAnimator != null && !string.IsNullOrEmpty(shootTriggerName))
-        {
-            gunAnimator.SetTrigger(shootTriggerName); // Play the shoot animation
-        }
-        else
-        {
-            Debug.LogWarning("Gun Animator or Shoot Trigger is not set!");
-        }
-    }
-
     void EjectCasing()
     {
         if (casingPrefab != null && firingPoint != null)
@@ -260,21 +246,7 @@ public class RapidFireShooter2D : MonoBehaviour
 
         isReloading = false; // Re-enable shooting
         gunAnimator.SetBool("Reload", false); // End reload animation
-    }
 
-    // Call this when switching to this weapon
-    public void OnWeaponSwitch()
-    {
-        if (gunAnimator != null)
-        {
-            // Reset the reload state when switching weapons
-            gunAnimator.SetBool("Reload", false);
-        }
-
-        // Optionally reset gun sprite to idle or desired state
-        if (gunSpriteRenderer != null && idleGunSprite != null)
-        {
-            ChangeGunSprite(idleGunSprite); // Make sure the weapon is in an idle state when switching
-        }
+        currentBullets = maxBullets; // Refill bullets after reloading
     }
 }
