@@ -195,7 +195,7 @@ MonoBehaviour:
   deathSpawnObject: {fileID: 0}
   hitSpawnChance: 0.6
   hitSpawnRadius: 0.7
-  player: {fileID: 3040927656317191039, guid: 7e03315a693262d429b41e6168bf9632, type: 3}
+  player: {fileID: 0}
   weapon: {fileID: 2879406094164570007}
   hitSprites: []
   hitSpriteDuration: 0.08
@@ -422,7 +422,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: f12585fff9c24a247a9321eff44467d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   fireRate: 0.2
   bulletSpreadAngle: 10
   shootingRange: 20
-  playerTarget: {fileID: 3040927656317191039, guid: 7e03315a693262d429b41e6168bf9632, type: 3}
+  playerTarget: {fileID: 0}
   muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
   muzzleFlashDuration: 0.1
   gunSpriteRenderer: {fileID: 5836697436503535828}
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c28ded08e41534f9dc7ee007eab44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 3040927656317191039, guid: 7e03315a693262d429b41e6168bf9632, type: 3}
+  target: {fileID: 0}
 --- !u!1 &4868081425194421174
 GameObject:
   m_ObjectHideFlags: 0
