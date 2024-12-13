@@ -1,0 +1,1480 @@
+fileFormatVersion: 2
+guid: 8fce4d9681290ce459dba2a1587b81e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2845178230925733415
+    second: Remington 870 Reload (Regular)_0
+  - first:
+      213: 1406799837085158668
+    second: Remington 870 Reload (Regular)_1
+  - first:
+      213: 588254855978134320
+    second: Remington 870 Reload (Regular)_2
+  - first:
+      213: 3898263179255668768
+    second: Remington 870 Reload (Regular)_3
+  - first:
+      213: 2260749220891789623
+    second: Remington 870 Reload (Regular)_4
+  - first:
+      213: 2164687552421135233
+    second: Remington 870 Reload (Regular)_5
+  - first:
+      213: -2094271830883680090
+    second: Remington 870 Reload (Regular)_6
+  - first:
+      213: 5939341953838187963
+    second: Remington 870 Reload (Regular)_7
+  - first:
+      213: -2937144463482607925
+    second: Remington 870 Reload (Regular)_8
+  - first:
+      213: 8495135592185609310
+    second: Remington 870 Reload (Regular)_9
+  - first:
+      213: -8369333623654820903
+    second: Remington 870 Reload (Regular)_10
+  - first:
+      213: -2959430626306380296
+    second: Remington 870 Reload (Regular)_11
+  - first:
+      213: 2896557672693513066
+    second: Remington 870 Reload (Regular)_12
+  - first:
+      213: 8895454400717715647
+    second: Remington 870 Reload (Regular)_13
+  - first:
+      213: 110716709187524854
+    second: Remington 870 Reload (Regular)_14
+  - first:
+      213: 3010802829473142144
+    second: Remington 870 Reload (Regular)_15
+  - first:
+      213: -5319110167877650638
+    second: Remington 870 Reload (Regular)_16
+  - first:
+      213: -4021301333463883620
+    second: Remington 870 Reload (Regular)_17
+  - first:
+      213: -2759436470100241862
+    second: Remington 870 Reload (Regular)_18
+  - first:
+      213: -3880897749376029220
+    second: Remington 870 Reload (Regular)_19
+  - first:
+      213: 8663838459382199186
+    second: Remington 870 Reload (Regular)_20
+  - first:
+      213: -3813355894933736900
+    second: Remington 870 Reload (Regular)_21
+  - first:
+      213: -6621807302365271537
+    second: Remington 870 Reload (Regular)_22
+  - first:
+      213: 2997467281867020992
+    second: Remington 870 Reload (Regular)_23
+  - first:
+      213: -7372180642740519833
+    second: Remington 870 Reload (Regular)_24
+  - first:
+      213: -2071893960324639125
+    second: Remington 870 Reload (Regular)_25
+  - first:
+      213: 8480679598499120836
+    second: Remington 870 Reload (Regular)_26
+  - first:
+      213: -1788014974689360634
+    second: Remington 870 Reload (Regular)_27
+  - first:
+      213: -6532846564000292898
+    second: Remington 870 Reload (Regular)_28
+  - first:
+      213: -5145987710661292907
+    second: Remington 870 Reload (Regular)_29
+  - first:
+      213: 5829315981653798575
+    second: Remington 870 Reload (Regular)_30
+  - first:
+      213: 1052692945520529602
+    second: Remington 870 Reload (Regular)_31
+  - first:
+      213: 1910546990167060063
+    second: Remington 870 Reload (Regular)_32
+  - first:
+      213: 3403097439446680926
+    second: Remington 870 Reload (Regular)_33
+  - first:
+      213: -2355729362906947867
+    second: Remington 870 Reload (Regular)_34
+  - first:
+      213: 5338862386787897951
+    second: Remington 870 Reload (Regular)_35
+  - first:
+      213: 7568362251805586992
+    second: Remington 870 Reload (Regular)_36
+  - first:
+      213: -754963545278972832
+    second: Remington 870 Reload (Regular)_37
+  - first:
+      213: 2751767233719462615
+    second: Remington 870 Reload (Regular)_38
+  - first:
+      213: -8406736862426349256
+    second: Remington 870 Reload (Regular)_39
+  - first:
+      213: 7605980637945222304
+    second: Remington 870 Reload (Regular)_40
+  - first:
+      213: -8845174794328681640
+    second: Remington 870 Reload (Regular)_41
+  - first:
+      213: 3961756796988752719
+    second: Remington 870 Reload (Regular)_42
+  - first:
+      213: -7190031899322251349
+    second: Remington 870 Reload (Regular)_43
+  - first:
+      213: 6656320833726693838
+    second: Remington 870 Reload (Regular)_44
+  - first:
+      213: -7438005058581388043
+    second: Remington 870 Reload (Regular)_45
+  - first:
+      213: -3372945597833012844
+    second: Remington 870 Reload (Regular)_46
+  - first:
+      213: 2099390514990861123
+    second: Remington 870 Reload (Regular)_47
+  - first:
+      213: 7721899932348045614
+    second: Remington 870 Reload (Regular)_48
+  - first:
+      213: -8964147456499250477
+    second: Remington 870 Reload (Regular)_49
+  - first:
+      213: 2141254867841443515
+    second: Remington 870 Reload (Regular)_50
+  - first:
+      213: 1085565073785437054
+    second: Remington 870 Reload (Regular)_51
+  - first:
+      213: 9061889088771186115
+    second: Remington 870 Reload (Regular)_52
+  - first:
+      213: -4839830538842278879
+    second: Remington 870 Reload (Regular)_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 399
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ea001d68a1c7720800000000000000
+      internalID: 2845178230925733415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 399
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dc98f8ff4f58310800000000000000
+      internalID: 1406799837085158668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 399
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ba9ffbca6e92800800000000000000
+      internalID: 588254855978134320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 399
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020e48825b9691630800000000000000
+      internalID: 3898263179255668768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 399
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7390f7d307bcf5f10800000000000000
+      internalID: 2260749220891789623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 391
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18385c32cd38a0e10800000000000000
+      internalID: 2164687552421135233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a04211add6afe2e0800000000000000
+      internalID: -2094271830883680090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_7
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5891ef908cc6250800000000000000
+      internalID: 5939341953838187963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc62d101caa2d37d0800000000000000
+      internalID: -2937144463482607925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_9
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c300bdfc8c4e570800000000000000
+      internalID: 8495135592185609310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_10
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3525379672adb80800000000000000
+      internalID: -8369333623654820903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 325
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fda89d668dfde6d0800000000000000
+      internalID: -2959430626306380296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_12
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b34505bd3a23820800000000000000
+      internalID: 2896557672693513066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_13
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 326
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8f676b5a0037b70800000000000000
+      internalID: 8895454400717715647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_14
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f892d9a248598100800000000000000
+      internalID: 110716709187524854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085dc73b83588c920800000000000000
+      internalID: 3010802829473142144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_16
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237fb72fb79be26b0800000000000000
+      internalID: -5319110167877650638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_17
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90a4143eb77138c0800000000000000
+      internalID: -4021301333463883620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_18
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 318
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32da6b862384b9d0800000000000000
+      internalID: -2759436470100241862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_19
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd24de0f08442ac0800000000000000
+      internalID: -3880897749376029220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_20
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293f7d20d232c3870800000000000000
+      internalID: 8663838459382199186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 239
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c323550840d341bc0800000000000000
+      internalID: -3813355894933736900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 279
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a2e63a75d9a14a0800000000000000
+      internalID: -6621807302365271537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 239
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca1a819c94299920800000000000000
+      internalID: 2997467281867020992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_24
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 280
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cb071d3c0c0b990800000000000000
+      internalID: -7372180642740519833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_25
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b669292ab672f33e0800000000000000
+      internalID: -2071893960324639125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_26
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6417a892d61b570800000000000000
+      internalID: 8480679598499120836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_27
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605cf849ad1bf27e0800000000000000
+      internalID: -1788014974689360634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_28
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf91ac99aaa655a0800000000000000
+      internalID: -6532846564000292898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_29
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 191
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c02871177c598b0800000000000000
+      internalID: -5145987710661292907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 143
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae6bf11004e5e050800000000000000
+      internalID: 5829315981653798575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_31
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 191
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c09f4318aaeb9e00800000000000000
+      internalID: 1052692945520529602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_32
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 143
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e69937d50a38a10800000000000000
+      internalID: 1910546990167060063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_33
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 191
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55c24e371b3a3f20800000000000000
+      internalID: 3403097439446680926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_34
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 143
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee59f820a4ce4fd0800000000000000
+      internalID: -2355729362906947867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_35
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 191
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52df25ed03771a40800000000000000
+      internalID: 5338862386787897951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 143
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036f85e7e59380960800000000000000
+      internalID: 7568362251805586992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_37
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 191
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cf641d7a4d585f0800000000000000
+      internalID: -754963545278972832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_38
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 143
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da686638bd303620800000000000000
+      internalID: 2751767233719462615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_39
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 191
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83145ea4d55455b80800000000000000
+      internalID: -8406736862426349256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_40
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 143
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4593d871fdd8960800000000000000
+      internalID: 7605980637945222304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_41
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 95
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853dcc76360af3580800000000000000
+      internalID: -8845174794328681640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_42
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43010b01dcfaf630800000000000000
+      internalID: 3961756796988752719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_43
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 95
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba78b2df410e73c90800000000000000
+      internalID: -7190031899322251349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_44
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 95
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1cf451880006c50800000000000000
+      internalID: 6656320833726693838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_45
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 95
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4a2b5bec5e6c890800000000000000
+      internalID: -7438005058581388043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_46
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 95
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499127279d3e031d0800000000000000
+      internalID: -3372945597833012844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_47
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 47
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bcad2ec88822d10800000000000000
+      internalID: 2099390514990861123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_48
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 47
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29d7ba7313b92b60800000000000000
+      internalID: 7721899932348045614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_49
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 47
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da0425e163f89380800000000000000
+      internalID: -8964147456499250477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_50
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 47
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6e34b15f347bd10800000000000000
+      internalID: 2141254867841443515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_51
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 47
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b3d8bdea3b01f00800000000000000
+      internalID: 1085565073785437054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_52
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 55
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdd1324d1c42cd70800000000000000
+      internalID: 9061889088771186115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_53
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 15
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124f73774c775dcb0800000000000000
+      internalID: -4839830538842278879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
