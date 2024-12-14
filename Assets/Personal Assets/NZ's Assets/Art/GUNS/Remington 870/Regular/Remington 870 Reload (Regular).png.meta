@@ -176,6 +176,36 @@ TextureImporter:
   - first:
       213: 2618202404770400289
     second: Remington 870 Reload (Regular)_57
+  - first:
+      213: -6895975735784416508
+    second: Remington 870 Reload (Regular)_58
+  - first:
+      213: 5199217298182585384
+    second: Remington 870 Reload (Regular)_59
+  - first:
+      213: 3575005912757817982
+    second: Remington 870 Reload (Regular)_60
+  - first:
+      213: -1711732391906532624
+    second: Remington 870 Reload (Regular)_61
+  - first:
+      213: -166953629234440573
+    second: Remington 870 Reload (Regular)_62
+  - first:
+      213: -3163422151510926450
+    second: Remington 870 Reload (Regular)_63
+  - first:
+      213: 1662353757828631407
+    second: Remington 870 Reload (Regular)_64
+  - first:
+      213: 5775125170548842322
+    second: Remington 870 Reload (Regular)_65
+  - first:
+      213: 329972095980056474
+    second: Remington 870 Reload (Regular)_66
+  - first:
+      213: -8501031733200582481
+    second: Remington 870 Reload (Regular)_67
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -432,8 +462,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 336
+        x: 384
+        y: 384
         width: 64
         height: 48
       alignment: 0
@@ -454,7 +484,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 336
         width: 64
         height: 48
@@ -476,7 +506,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 336
         width: 64
         height: 48
@@ -498,7 +528,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_9
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 336
         width: 64
         height: 48
@@ -520,7 +550,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_10
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 336
         width: 64
         height: 48
@@ -542,7 +572,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_11
       rect:
         serializedVersion: 2
-        x: 320
+        x: 256
         y: 336
         width: 64
         height: 48
@@ -564,8 +594,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
+        x: 320
+        y: 336
         width: 64
         height: 48
       alignment: 0
@@ -586,8 +616,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 288
+        x: 384
+        y: 336
         width: 64
         height: 48
       alignment: 0
@@ -608,7 +638,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_14
       rect:
         serializedVersion: 2
-        x: 128
+        x: 0
         y: 288
         width: 64
         height: 48
@@ -630,7 +660,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_15
       rect:
         serializedVersion: 2
-        x: 192
+        x: 64
         y: 288
         width: 64
         height: 48
@@ -652,7 +682,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_16
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 288
         width: 64
         height: 48
@@ -674,7 +704,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_17
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 288
         width: 64
         height: 48
@@ -696,8 +726,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
+        x: 256
+        y: 288
         width: 64
         height: 48
       alignment: 0
@@ -718,8 +748,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_19
       rect:
         serializedVersion: 2
-        x: 64
-        y: 240
+        x: 320
+        y: 288
         width: 64
         height: 48
       alignment: 0
@@ -740,8 +770,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_20
       rect:
         serializedVersion: 2
-        x: 128
-        y: 240
+        x: 384
+        y: 288
         width: 64
         height: 48
       alignment: 0
@@ -762,7 +792,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_21
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 240
         width: 64
         height: 48
@@ -784,7 +814,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_22
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 240
         width: 64
         height: 48
@@ -806,7 +836,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_23
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 240
         width: 64
         height: 48
@@ -828,8 +858,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 192
+        y: 240
         width: 64
         height: 48
       alignment: 0
@@ -850,8 +880,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_25
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 256
+        y: 240
         width: 64
         height: 48
       alignment: 0
@@ -872,8 +902,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_26
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 320
+        y: 240
         width: 64
         height: 48
       alignment: 0
@@ -894,8 +924,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_27
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 384
+        y: 240
         width: 64
         height: 48
       alignment: 0
@@ -916,7 +946,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_28
       rect:
         serializedVersion: 2
-        x: 256
+        x: 0
         y: 192
         width: 64
         height: 48
@@ -938,7 +968,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_29
       rect:
         serializedVersion: 2
-        x: 320
+        x: 64
         y: 192
         width: 64
         height: 48
@@ -960,8 +990,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 128
+        y: 192
         width: 64
         height: 48
       alignment: 0
@@ -982,8 +1012,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_31
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
+        x: 192
+        y: 192
         width: 64
         height: 48
       alignment: 0
@@ -1004,8 +1034,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_32
       rect:
         serializedVersion: 2
-        x: 128
-        y: 144
+        x: 256
+        y: 192
         width: 64
         height: 48
       alignment: 0
@@ -1026,8 +1056,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_33
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
+        x: 320
+        y: 192
         width: 64
         height: 48
       alignment: 0
@@ -1048,8 +1078,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_34
       rect:
         serializedVersion: 2
-        x: 256
-        y: 144
+        x: 384
+        y: 192
         width: 64
         height: 48
       alignment: 0
@@ -1070,7 +1100,7 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_35
       rect:
         serializedVersion: 2
-        x: 320
+        x: 0
         y: 144
         width: 64
         height: 48
@@ -1092,8 +1122,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 64
+        y: 144
         width: 64
         height: 48
       alignment: 0
@@ -1114,8 +1144,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_37
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 128
+        y: 144
         width: 64
         height: 48
       alignment: 0
@@ -1136,8 +1166,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_38
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 192
+        y: 144
         width: 64
         height: 48
       alignment: 0
@@ -1158,8 +1188,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_39
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
+        x: 256
+        y: 144
         width: 64
         height: 48
       alignment: 0
@@ -1180,8 +1210,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_40
       rect:
         serializedVersion: 2
-        x: 256
-        y: 96
+        x: 320
+        y: 144
         width: 64
         height: 48
       alignment: 0
@@ -1202,8 +1232,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_41
       rect:
         serializedVersion: 2
-        x: 320
-        y: 96
+        x: 384
+        y: 144
         width: 64
         height: 48
       alignment: 0
@@ -1225,7 +1255,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1247,7 +1277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 48
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1269,7 +1299,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 48
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1291,7 +1321,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 48
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1313,7 +1343,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 48
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1335,7 +1365,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 48
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1356,8 +1386,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 384
+        y: 96
         width: 64
         height: 48
       alignment: 0
@@ -1378,8 +1408,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_49
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 0
+        y: 48
         width: 64
         height: 48
       alignment: 0
@@ -1400,8 +1430,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_50
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 64
+        y: 48
         width: 64
         height: 48
       alignment: 0
@@ -1422,8 +1452,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_51
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 128
+        y: 48
         width: 64
         height: 48
       alignment: 0
@@ -1444,8 +1474,8 @@ TextureImporter:
       name: Remington 870 Reload (Regular)_52
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 192
+        y: 48
         width: 64
         height: 48
       alignment: 0
@@ -1462,11 +1492,231 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124f73774c775dcb0800000000000000
+      internalID: -4839830538842278879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_54
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32c0c0f7515c1ed0800000000000000
+      internalID: -2441987459798482374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_55
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9e7071ff0a239e0800000000000000
+      internalID: -1643073896573310495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760d8ba18d4d0ef60800000000000000
+      internalID: 8061677357619531879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128c96e1739b55420800000000000000
+      internalID: 2618202404770400289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b5bd0da929c40a0800000000000000
+      internalID: -6895975735784416508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c3d380694572840800000000000000
+      internalID: 5199217298182585384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_60
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72d9dbbfe8fc9130800000000000000
+      internalID: 3575005912757817982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2a1ed6574be38e0800000000000000
+      internalID: -1711732391906532624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remington 870 Reload (Regular)_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386d48b0f8cdeadf0800000000000000
+      internalID: -166953629234440573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4ecb0cb1efee1d9498929f9c8e0b1010
+    spriteID: f28bd1ff6e4cb2b4c8ad7318f58818e3
     internalID: 0
     vertices: []
     indices: 
@@ -1525,7 +1775,17 @@ TextureImporter:
       Remington 870 Reload (Regular)_50: 2141254867841443515
       Remington 870 Reload (Regular)_51: 1085565073785437054
       Remington 870 Reload (Regular)_52: 9061889088771186115
+      Remington 870 Reload (Regular)_53: -4839830538842278879
+      Remington 870 Reload (Regular)_54: -2441987459798482374
+      Remington 870 Reload (Regular)_55: -1643073896573310495
+      Remington 870 Reload (Regular)_56: 8061677357619531879
+      Remington 870 Reload (Regular)_57: 2618202404770400289
+      Remington 870 Reload (Regular)_58: -6895975735784416508
+      Remington 870 Reload (Regular)_59: 5199217298182585384
       Remington 870 Reload (Regular)_6: -2094271830883680090
+      Remington 870 Reload (Regular)_60: 3575005912757817982
+      Remington 870 Reload (Regular)_61: -1711732391906532624
+      Remington 870 Reload (Regular)_62: -166953629234440573
       Remington 870 Reload (Regular)_7: 5939341953838187963
       Remington 870 Reload (Regular)_8: -2937144463482607925
       Remington 870 Reload (Regular)_9: 8495135592185609310
