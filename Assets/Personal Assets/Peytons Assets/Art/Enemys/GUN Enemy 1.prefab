@@ -179,10 +179,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  detectionRange: 10
+  detectionRange: 8
   minimumDistance: 5
   radiusBuffer: 0.5
-  maxHealth: 200
+  maxHealth: 100
   hitSpawnObjects:
   - {fileID: 410856245102430361, guid: c1f0ca2eaae797d40803ba888fc559f4, type: 3}
   - {fileID: 4086050188696086219, guid: b46405fba7002744cb68c5a9bf2ab3b5, type: 3}
@@ -548,8 +548,7 @@ MonoBehaviour:
   projectileSpeed: 50
   fireRate: 0.2
   bulletSpreadAngle: 10
-  shootingRange: 20
-  playerTarget: {fileID: 0}
+  shootingRange: 10
   muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
   muzzleFlashDuration: 0.1
   gunSpriteRenderer: {fileID: 5836697436503535828}

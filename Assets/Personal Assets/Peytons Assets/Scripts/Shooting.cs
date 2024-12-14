@@ -25,6 +25,9 @@ public class RapidFireShooter2D : MonoBehaviour
     public Sprite firingGunSprite;
     public float gunFireSpriteDuration = 0.1f;
 
+    [Header("Reloading Sprite")]
+    public SpriteRenderer reloadingSpriteRenderer; // The SpriteRenderer for the reloading sprite
+
     [Header("Shooting Particle System")]
     public ParticleSystem shootingParticles;
 
@@ -68,6 +71,10 @@ public class RapidFireShooter2D : MonoBehaviour
 
         if (gunAnimator != null)
             gunAnimator.SetBool("Reload", false);
+
+        // Hide reloading sprite at the start
+        if (reloadingSpriteRenderer != null)
+            reloadingSpriteRenderer.enabled = false;
     }
 
     void Update()
@@ -150,12 +157,22 @@ public class RapidFireShooter2D : MonoBehaviour
     IEnumerator ReloadAnimation()
     {
         isReloading = true;
+
+        // Show the reloading sprite
+        if (reloadingSpriteRenderer != null)
+            reloadingSpriteRenderer.enabled = true;
+
         gunAnimator?.SetBool("Reload", true);
         yield return new WaitForSeconds(reloadTime);
 
         currentBullets = maxBullets;
         UpdateBulletUI(); // Reset bullet UI after reload
         isReloading = false;
+
+        // Hide the reloading sprite
+        if (reloadingSpriteRenderer != null)
+            reloadingSpriteRenderer.enabled = false;
+
         gunAnimator?.SetBool("Reload", false);
     }
 

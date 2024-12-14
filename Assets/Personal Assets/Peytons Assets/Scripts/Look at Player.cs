@@ -2,12 +2,23 @@ using UnityEngine;
 
 public class LookAtTarget : MonoBehaviour
 {
-    // Reference to the target object
-    public Transform target;
+    // Optional: Reference to the target, assigned dynamically by the script
+    private Transform target;
 
     void Update()
     {
-        if (target != null) // Ensure the target is assigned
+        // If the target is not assigned, find the GameObject with the "Player" tag
+        if (target == null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                target = player.transform;
+            }
+        }
+
+        // If the target is found, make the object look at it
+        if (target != null)
         {
             // Get the target position in world space
             Vector3 targetPosition = target.position;

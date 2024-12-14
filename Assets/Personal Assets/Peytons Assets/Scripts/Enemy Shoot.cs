@@ -11,9 +11,6 @@ public class EnemyShooter2D : MonoBehaviour
     public float bulletSpreadAngle = 5f;
     public float shootingRange = 10f; // Shooting range (radius)
 
-    [Header("Target Settings")]
-    public Transform playerTarget;
-
     [Header("Muzzle Flash Settings")]
     public GameObject muzzleFlashPrefab;
     public float muzzleFlashDuration = 0.1f;
@@ -38,6 +35,10 @@ public class EnemyShooter2D : MonoBehaviour
     public float casingFreezeTime = 2f;
 
     private float nextFireTime = 0f;
+    private Transform playerTarget;
+
+    [Header("Layer Mask for Obstructions")]
+    public LayerMask obstructionLayerMask; // Specify layers to be considered as obstructions
 
     void Start()
     {
@@ -54,10 +55,8 @@ public class EnemyShooter2D : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-        if (playerTarget == null)
-        {
-            Debug.LogWarning("Player Target is not set! Make sure to assign it in the inspector.");
-        }
+        // Find player by tag at start
+        FindPlayerTarget();
     }
 
     void Update()
@@ -68,10 +67,25 @@ public class EnemyShooter2D : MonoBehaviour
 
             // Check if player is within shooting range
             float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
-            if (distanceToPlayer <= shootingRange)
+            if (distanceToPlayer <= shootingRange && CanSeePlayer())
             {
                 HandleShooting();
             }
+        }
+        else
+        {
+            // Keep trying to find the player if it's not already set
+            FindPlayerTarget();
+        }
+    }
+
+    void FindPlayerTarget()
+    {
+        // Find the player object by tag
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerTarget = player.transform;
         }
     }
 
@@ -81,6 +95,18 @@ public class EnemyShooter2D : MonoBehaviour
         Vector2 directionToPlayer = (playerTarget.position - firingPoint.position).normalized;
         float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
         firingPoint.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    bool CanSeePlayer()
+    {
+        // Perform a raycast to check for obstructions
+        Vector2 directionToPlayer = (playerTarget.position - firingPoint.position).normalized;
+        float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(firingPoint.position, directionToPlayer, distanceToPlayer, obstructionLayerMask);
+
+        // If the raycast hits something, it means the player is obstructed
+        return hit.collider == null || hit.collider.CompareTag("Player");
     }
 
     void HandleShooting()
