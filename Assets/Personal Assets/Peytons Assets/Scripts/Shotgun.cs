@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShotgunShooter2D : MonoBehaviour
 {
@@ -32,10 +33,24 @@ public class ShotgunShooter2D : MonoBehaviour
     [Header("Animator Settings")]
     public Animator gunAnimator;  // Reference to the Animator
 
+    [Header("Bullet UI Settings")]
+    public int maxBullets = 6; // Maximum bullets in the shotgun
+    public int currentBullets;
+    public Image[] bulletImages; // Array to manually assign bullet images in the Inspector
+    public Sprite activeBulletSprite; // Sprite for a loaded bullet
+    public Sprite emptyBulletSprite;  // Sprite for an empty bullet
+
+    [Header("Reload Settings")]
+    public float reloadTime = 2f;
+    private bool isReloading = false;
+
     private float nextFireTime = 0f;
 
     void Start()
     {
+        currentBullets = maxBullets;
+
+        // Initialize shooting particles
         if (shootingParticles != null)
         {
             shootingParticles.Stop();
@@ -43,20 +58,29 @@ public class ShotgunShooter2D : MonoBehaviour
             mainModule.prewarm = true;
         }
 
+        // Initialize audio source
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
+        // Warn if animator is missing
         if (gunAnimator == null)
         {
             Debug.LogWarning("Animator not assigned!");
         }
+
+        UpdateBulletUI();
     }
 
     void Update()
     {
+        if (isReloading)
+        {
+            return; // Skip shooting logic while reloading
+        }
+
         if (holdToFire && Input.GetMouseButton(0))
         {
             HandleShooting();
@@ -68,13 +92,19 @@ public class ShotgunShooter2D : MonoBehaviour
         else
         {
             StopShootingParticles();
-            gunAnimator.SetBool("IsReloading", false);  // Reset reloading if not shooting
+            gunAnimator.SetBool("IsReloading", false); // Reset reloading if not shooting
+        }
+
+        // Start reload when bullets are empty
+        if (currentBullets <= 0 && !isReloading)
+        {
+            StartCoroutine(Reload());
         }
     }
 
     void HandleShooting()
     {
-        if (Time.time >= nextFireTime)
+        if (Time.time >= nextFireTime && currentBullets > 0)
         {
             Shoot();
             nextFireTime = Time.time + fireRate;
@@ -111,6 +141,10 @@ public class ShotgunShooter2D : MonoBehaviour
 
                 Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
             }
+
+            // Deduct a bullet and update the UI
+            currentBullets--;
+            UpdateBulletUI();
         }
         else
         {
@@ -163,5 +197,40 @@ public class ShotgunShooter2D : MonoBehaviour
         {
             audioSource.PlayOneShot(gunfireSound);
         }
+    }
+
+    void UpdateBulletUI()
+    {
+        if (bulletImages != null)
+        {
+            for (int i = 0; i < bulletImages.Length; i++)
+            {
+                if (i < currentBullets)
+                {
+                    bulletImages[i].sprite = activeBulletSprite;
+                }
+                else
+                {
+                    bulletImages[i].sprite = emptyBulletSprite;
+                }
+            }
+        }
+    }
+
+    // Modified Reload function
+    System.Collections.IEnumerator Reload()
+    {
+        isReloading = true;
+
+        Debug.Log("Reloading...");
+        gunAnimator.SetBool("IsReloading", true); // Trigger reload animation
+
+        yield return new WaitForSeconds(reloadTime);
+
+        currentBullets = maxBullets;  // Reload the bullets
+        UpdateBulletUI();
+
+        isReloading = false;
+        gunAnimator.SetBool("IsReloading", false); // Reset the reload animation
     }
 }
