@@ -47,9 +47,6 @@ public class RapidFireShooter2D : MonoBehaviour
     public bool isReloading = false;
     public float reloadTime = 2f;
 
-    private int currentBullets;
-    public int maxBullets = 10;
-
     [Header("Bullet UI Settings")]
     public List<Image> bulletImages; // References to UI Images for bullets
     public Sprite bulletFullSprite;  // Sprite for a full bullet
@@ -59,9 +56,26 @@ public class RapidFireShooter2D : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D playerRb;
 
+    private int currentBullets;
+    public int maxBullets = 10;
+
     private float nextFireTime = 0f;
 
     void Start()
+    {
+        InitializeSettings();
+    }
+
+    void Update()
+    {
+        HandleReloadInput();
+        HandleShootingInput();
+        HandleMovement();
+    }
+
+    #region Initialization Methods
+
+    void InitializeSettings()
     {
         currentBullets = maxBullets;
         audioSource = GetComponent<AudioSource>() ?? gameObject.AddComponent<AudioSource>();
@@ -77,18 +91,41 @@ public class RapidFireShooter2D : MonoBehaviour
             reloadingSpriteRenderer.enabled = false;
     }
 
-    void Update()
-    {
-        HandleReloadInput();
-        HandleShootingInput();
-        HandleMovement();
-    }
+    #endregion
+
+    #region Reloading Methods
 
     void HandleReloadInput()
     {
         if (Input.GetKeyDown(KeyCode.R) && !isReloading)
             StartCoroutine(ReloadAnimation());
     }
+
+    IEnumerator ReloadAnimation()
+    {
+        isReloading = true;
+
+        // Show the reloading sprite
+        if (reloadingSpriteRenderer != null)
+            reloadingSpriteRenderer.enabled = true;
+
+        gunAnimator?.SetBool("Reload", true);
+        yield return new WaitForSeconds(reloadTime);
+
+        currentBullets = maxBullets;
+        UpdateBulletUI(); // Reset bullet UI after reload
+        isReloading = false;
+
+        // Hide the reloading sprite
+        if (reloadingSpriteRenderer != null)
+            reloadingSpriteRenderer.enabled = false;
+
+        gunAnimator?.SetBool("Reload", false);
+    }
+
+    #endregion
+
+    #region Shooting Methods
 
     void HandleShootingInput()
     {
@@ -142,40 +179,6 @@ public class RapidFireShooter2D : MonoBehaviour
         }
     }
 
-    void UpdateBulletUI()
-    {
-        // Ensure the bullet UI reflects current bullets
-        for (int i = 0; i < bulletImages.Count; i++)
-        {
-            if (i < currentBullets)
-                bulletImages[i].sprite = bulletFullSprite; // Full bullet sprite
-            else
-                bulletImages[i].sprite = bulletEmptySprite; // Empty bullet sprite
-        }
-    }
-
-    IEnumerator ReloadAnimation()
-    {
-        isReloading = true;
-
-        // Show the reloading sprite
-        if (reloadingSpriteRenderer != null)
-            reloadingSpriteRenderer.enabled = true;
-
-        gunAnimator?.SetBool("Reload", true);
-        yield return new WaitForSeconds(reloadTime);
-
-        currentBullets = maxBullets;
-        UpdateBulletUI(); // Reset bullet UI after reload
-        isReloading = false;
-
-        // Hide the reloading sprite
-        if (reloadingSpriteRenderer != null)
-            reloadingSpriteRenderer.enabled = false;
-
-        gunAnimator?.SetBool("Reload", false);
-    }
-
     void ShowMuzzleFlash()
     {
         if (muzzleFlashPrefab != null)
@@ -183,6 +186,17 @@ public class RapidFireShooter2D : MonoBehaviour
             GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, firingPoint.position, firingPoint.rotation, firingPoint);
             Destroy(muzzleFlash, muzzleFlashDuration);
         }
+    }
+
+    void ChangeGunSprite(Sprite newSprite)
+    {
+        if (gunSpriteRenderer != null)
+            gunSpriteRenderer.sprite = newSprite;
+    }
+
+    void ResetGunSprite()
+    {
+        ChangeGunSprite(idleGunSprite);
     }
 
     void PlayGunfireSound()
@@ -212,17 +226,6 @@ public class RapidFireShooter2D : MonoBehaviour
         }
     }
 
-    void ChangeGunSprite(Sprite newSprite)
-    {
-        if (gunSpriteRenderer != null)
-            gunSpriteRenderer.sprite = newSprite;
-    }
-
-    void ResetGunSprite()
-    {
-        ChangeGunSprite(idleGunSprite);
-    }
-
     IEnumerator FreezeCasingMovement(Rigidbody2D casingRb, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -233,6 +236,26 @@ public class RapidFireShooter2D : MonoBehaviour
             casingRb.isKinematic = true;
         }
     }
+
+    #endregion
+
+    #region Bullet UI Methods
+
+    void UpdateBulletUI()
+    {
+        // Ensure the bullet UI reflects current bullets
+        for (int i = 0; i < bulletImages.Count; i++)
+        {
+            if (i < currentBullets)
+                bulletImages[i].sprite = bulletFullSprite; // Full bullet sprite
+            else
+                bulletImages[i].sprite = bulletEmptySprite; // Empty bullet sprite
+        }
+    }
+
+    #endregion
+
+    #region Movement Methods
 
     void HandleMovement()
     {
@@ -245,4 +268,6 @@ public class RapidFireShooter2D : MonoBehaviour
             playerRb.linearVelocity = movement * moveSpeed;
         }
     }
+
+    #endregion
 }

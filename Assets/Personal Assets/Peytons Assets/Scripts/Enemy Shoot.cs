@@ -9,7 +9,7 @@ public class EnemyShooter2D : MonoBehaviour
     public float projectileSpeed = 10f;
     public float fireRate = 0.2f;
     public float bulletSpreadAngle = 5f;
-    public float shootingRange = 10f; // Shooting range (radius)
+    public float shootingRange = 10f;
 
     [Header("Muzzle Flash Settings")]
     public GameObject muzzleFlashPrefab;
@@ -38,7 +38,7 @@ public class EnemyShooter2D : MonoBehaviour
     private Transform playerTarget;
 
     [Header("Layer Mask for Obstructions")]
-    public LayerMask obstructionLayerMask; // Specify layers to be considered as obstructions
+    public LayerMask obstructionLayerMask;
 
     void Start()
     {
@@ -49,13 +49,7 @@ public class EnemyShooter2D : MonoBehaviour
             mainModule.prewarm = true;
         }
 
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-
-        // Find player by tag at start
+        audioSource = GetComponent<AudioSource>() ?? gameObject.AddComponent<AudioSource>();
         FindPlayerTarget();
     }
 
@@ -64,34 +58,22 @@ public class EnemyShooter2D : MonoBehaviour
         if (playerTarget != null)
         {
             AimAtPlayer();
-
-            // Check if player is within shooting range
-            float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
-            if (distanceToPlayer <= shootingRange && CanSeePlayer())
-            {
-                HandleShooting();
-            }
+            if (CanShoot()) HandleShooting();
         }
         else
         {
-            // Keep trying to find the player if it's not already set
             FindPlayerTarget();
         }
     }
 
     void FindPlayerTarget()
     {
-        // Find the player object by tag
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            playerTarget = player.transform;
-        }
+        if (player != null) playerTarget = player.transform;
     }
 
     void AimAtPlayer()
     {
-        // Calculate the direction to the player
         Vector2 directionToPlayer = (playerTarget.position - firingPoint.position).normalized;
         float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
         firingPoint.rotation = Quaternion.Euler(0, 0, angle);
@@ -99,23 +81,22 @@ public class EnemyShooter2D : MonoBehaviour
 
     bool CanSeePlayer()
     {
-        // Perform a raycast to check for obstructions
         Vector2 directionToPlayer = (playerTarget.position - firingPoint.position).normalized;
         float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
-
         RaycastHit2D hit = Physics2D.Raycast(firingPoint.position, directionToPlayer, distanceToPlayer, obstructionLayerMask);
-
-        // If the raycast hits something, it means the player is obstructed
         return hit.collider == null || hit.collider.CompareTag("Player");
+    }
+
+    bool CanShoot()
+    {
+        float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
+        return distanceToPlayer <= shootingRange && CanSeePlayer() && Time.time >= nextFireTime;
     }
 
     void HandleShooting()
     {
-        if (Time.time >= nextFireTime)
-        {
-            Shoot();
-            nextFireTime = Time.time + fireRate;
-        }
+        Shoot();
+        nextFireTime = Time.time + fireRate;
     }
 
     void Shoot()
@@ -123,15 +104,11 @@ public class EnemyShooter2D : MonoBehaviour
         if (projectilePrefab != null && firingPoint != null)
         {
             GameObject projectile = Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);
-
             float spread = Random.Range(-bulletSpreadAngle, bulletSpreadAngle);
             Vector2 direction = Quaternion.Euler(0, 0, spread) * firingPoint.right;
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                rb.linearVelocity = direction * projectileSpeed;
-            }
+            if (rb != null) rb.linearVelocity = direction * projectileSpeed;
 
             ShowMuzzleFlash();
             ChangeGunSprite(firingGunSprite);
@@ -139,8 +116,6 @@ public class EnemyShooter2D : MonoBehaviour
 
             Destroy(projectile, 5f);
             Invoke(nameof(ResetGunSprite), gunFireSpriteDuration);
-
-            // Eject casing for every shot
             EjectCasing();
         }
         else
@@ -151,7 +126,7 @@ public class EnemyShooter2D : MonoBehaviour
 
     void ShowMuzzleFlash()
     {
-        if (muzzleFlashPrefab != null && firingPoint != null)
+        if (muzzleFlashPrefab != null)
         {
             GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, firingPoint.position, firingPoint.rotation);
             muzzleFlash.transform.SetParent(firingPoint);
@@ -159,75 +134,52 @@ public class EnemyShooter2D : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Muzzle Flash Prefab or Firing Point is not set!");
+            Debug.LogWarning("Muzzle Flash Prefab is not set!");
         }
     }
 
     void ChangeGunSprite(Sprite newSprite)
     {
-        if (gunSpriteRenderer != null && newSprite != null)
-        {
-            gunSpriteRenderer.sprite = newSprite;
-        }
-        else
-        {
-            Debug.LogWarning("Gun SpriteRenderer or Sprite is not set!");
-        }
+        if (gunSpriteRenderer != null) gunSpriteRenderer.sprite = newSprite;
+        else Debug.LogWarning("Gun SpriteRenderer is not set!");
     }
 
-    void ResetGunSprite()
-    {
-        ChangeGunSprite(idleGunSprite);
-    }
+    void ResetGunSprite() => ChangeGunSprite(idleGunSprite);
 
     void PlayGunfireSound()
     {
-        if (gunfireSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(gunfireSound);
-        }
-        else
-        {
-            Debug.LogWarning("Gunfire sound is not assigned or AudioSource is missing!");
-        }
+        if (gunfireSound != null) audioSource.PlayOneShot(gunfireSound);
+        else Debug.LogWarning("Gunfire sound is not assigned!");
     }
 
     void EjectCasing()
     {
-        if (casingPrefab != null && firingPoint != null)
+        if (casingPrefab != null)
         {
-            // Offset position for the casing ejection
-            Vector3 casingPosition = firingPoint.position + firingPoint.TransformDirection(new Vector3(-0.2f, -0.1f, 0f)); // Adjust as needed
+            Vector3 casingPosition = firingPoint.position + firingPoint.TransformDirection(new Vector3(-0.2f, -0.1f, 0f));
             GameObject casing = Instantiate(casingPrefab, casingPosition, Quaternion.Euler(0, 0, Random.Range(0f, 360f)));
 
-            // Apply a force to the casing to simulate ejection with spread
             Rigidbody2D casingRb = casing.GetComponent<Rigidbody2D>();
             if (casingRb != null)
             {
-                // Adjust direction with random spread
-                float spreadAngle = Random.Range(-15f, 15f); // Spread angle range in degrees
-                Vector2 baseDirection = (Vector2.left + Vector2.down).normalized; // Base ejection direction
-                Vector2 spreadDirection = Quaternion.Euler(0, 0, spreadAngle) * baseDirection;
-
+                float spreadAngle = Random.Range(-15f, 15f);
+                Vector2 spreadDirection = Quaternion.Euler(0, 0, spreadAngle) * (Vector2.left + Vector2.down).normalized;
                 casingRb.AddForce(firingPoint.TransformDirection(spreadDirection * casingEjectForce), ForceMode2D.Impulse);
-                casingRb.AddTorque(Random.Range(-10f, 10f)); // Add random spin
-
-                // Freeze movement after a delay
+                casingRb.AddTorque(Random.Range(-10f, 10f));
                 StartCoroutine(FreezeCasingMovement(casingRb, casingFreezeTime));
             }
 
-            Destroy(casing, casingLifetime); // Destroy the casing after its lifetime
+            Destroy(casing, casingLifetime);
         }
         else
         {
-            Debug.LogWarning("Casing Prefab or Firing Point is not set!");
+            Debug.LogWarning("Casing Prefab is not set!");
         }
     }
 
     IEnumerator FreezeCasingMovement(Rigidbody2D casingRb, float delay)
     {
         yield return new WaitForSeconds(delay);
-
         if (casingRb != null)
         {
             casingRb.linearVelocity = Vector2.zero;
@@ -236,13 +188,12 @@ public class EnemyShooter2D : MonoBehaviour
         }
     }
 
-    // Draw the shooting range radius in the Scene view
     void OnDrawGizmos()
     {
         if (shootingRange > 0)
         {
-            Gizmos.color = Color.red; // Set the color of the radius
-            Gizmos.DrawWireSphere(firingPoint.position, shootingRange); // Draw the wireframe circle
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(firingPoint.position, shootingRange);
         }
     }
 }

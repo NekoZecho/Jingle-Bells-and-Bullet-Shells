@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6781748066612238236}
   - component: {fileID: 3081086437266699255}
+  - component: {fileID: 8438881911628026300}
   - component: {fileID: 7313309280382714510}
   - component: {fileID: 5044179584547230759}
-  - component: {fileID: 8438881911628026300}
   - component: {fileID: 8536781969453091132}
   m_Layer: 0
   m_Name: GUN Enemy 1
@@ -93,6 +93,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8438881911628026300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074059276216142021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1dc7b27cb6f5d4fa4a78cd7ec42c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2.5
+  detectionRange: 15
+  minimumDistance: 3
+  radiusBuffer: 0.5
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxHealth: 100
+  hitSpawnObjects:
+  - {fileID: 410856245102430361, guid: c1f0ca2eaae797d40803ba888fc559f4, type: 3}
+  - {fileID: 4086050188696086219, guid: b46405fba7002744cb68c5a9bf2ab3b5, type: 3}
+  - {fileID: 9073114173539558063, guid: 2c7f54ddf84c42f45812617c1af405df, type: 3}
+  - {fileID: 4615696505787730884, guid: 1ebf14122b07e2b438009235f27bac42, type: 3}
+  - {fileID: 8572391446334192711, guid: e38ce1f957ca4d249ab1ff09812275ed, type: 3}
+  - {fileID: 3512395392177147668, guid: d68959e6f471f7f48a9dfd3c72d41eca, type: 3}
+  - {fileID: 4556927399075308103, guid: 45038f3304019a847a5ac274b4e00263, type: 3}
+  - {fileID: 5757362677164163409, guid: 426e2db9dbb31904da42f537d9766e68, type: 3}
+  deathSpawnObject: {fileID: 0}
+  hitSpawnChance: 1
+  hitSpawnRadius: 0.7
+  player: {fileID: 0}
+  weapon: {fileID: 2879406094164570007}
+  hitSprites: []
+  hitSpriteDuration: 0.08
+  redDuration: 0.1
 --- !u!50 &7313309280382714510
 Rigidbody2D:
   serializedVersion: 5
@@ -166,40 +203,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3139443, y: 1.5856342}
   m_EdgeRadius: 0
---- !u!114 &8438881911628026300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074059276216142021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e1dc7b27cb6f5d4fa4a78cd7ec42c33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2.5
-  detectionRange: 8
-  minimumDistance: 5
-  radiusBuffer: 0.5
-  maxHealth: 100
-  hitSpawnObjects:
-  - {fileID: 410856245102430361, guid: c1f0ca2eaae797d40803ba888fc559f4, type: 3}
-  - {fileID: 4086050188696086219, guid: b46405fba7002744cb68c5a9bf2ab3b5, type: 3}
-  - {fileID: 9073114173539558063, guid: 2c7f54ddf84c42f45812617c1af405df, type: 3}
-  - {fileID: 4615696505787730884, guid: 1ebf14122b07e2b438009235f27bac42, type: 3}
-  - {fileID: 8572391446334192711, guid: e38ce1f957ca4d249ab1ff09812275ed, type: 3}
-  - {fileID: 3512395392177147668, guid: d68959e6f471f7f48a9dfd3c72d41eca, type: 3}
-  - {fileID: 4556927399075308103, guid: 45038f3304019a847a5ac274b4e00263, type: 3}
-  - {fileID: 5757362677164163409, guid: 426e2db9dbb31904da42f537d9766e68, type: 3}
-  deathSpawnObject: {fileID: 0}
-  hitSpawnChance: 0.6
-  hitSpawnRadius: 0.7
-  player: {fileID: 0}
-  weapon: {fileID: 2879406094164570007}
-  hitSprites: []
-  hitSpriteDuration: 0.08
-  redDuration: 0.1
 --- !u!95 &8536781969453091132
 Animator:
   serializedVersion: 7
@@ -232,7 +235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 622534163170129321}
   - component: {fileID: 5634079071741328997}
-  - component: {fileID: 4526384895714306266}
   - component: {fileID: 9073173493675033462}
   m_Layer: 0
   m_Name: Shadows
@@ -312,21 +314,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4526384895714306266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2315078114384010654}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e444b3532d14f7e47b987d11a40850b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 0}
-  smoothTime: -20
 --- !u!114 &9073173493675033462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,8 +341,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2879406094164570007}
   - component: {fileID: 5836697436503535828}
-  - component: {fileID: 9143076633020176669}
   - component: {fileID: 2336595724993149671}
+  - component: {fileID: 9143076633020176669}
   m_Layer: 0
   m_Name: M4A1
   m_TagString: Untagged
@@ -434,6 +421,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2336595724993149671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028851306015437691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfd0a6c56f771b4d87ac977380d8e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5118138635693579939, guid: b3aae23a7b6847a449f3354a920382be, type: 3}
+  firingPoint: {fileID: 8593015909477000444}
+  projectileSpeed: 50
+  fireRate: 0.2
+  bulletSpreadAngle: 10
+  shootingRange: 8.5
+  muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
+  muzzleFlashDuration: 0.1
+  gunSpriteRenderer: {fileID: 5836697436503535828}
+  idleGunSprite: {fileID: 21300000, guid: f12585fff9c24a247a9321eff44467d3, type: 3}
+  firingGunSprite: {fileID: 21300000, guid: 94674070d37fa9447aae7d6ae36a2d09, type: 3}
+  gunFireSpriteDuration: 0.1
+  shootingParticles: {fileID: 0}
+  gunfireSound: {fileID: 0}
+  casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
+  casingEjectForce: 2
+  casingLifetime: 0.5
+  casingFreezeTime: 0.2
+  obstructionLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!82 &9143076633020176669
 AudioSource:
   m_ObjectHideFlags: 0
@@ -531,36 +551,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2336595724993149671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3028851306015437691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbfd0a6c56f771b4d87ac977380d8e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 5118138635693579939, guid: b3aae23a7b6847a449f3354a920382be, type: 3}
-  firingPoint: {fileID: 8593015909477000444}
-  projectileSpeed: 50
-  fireRate: 0.2
-  bulletSpreadAngle: 10
-  shootingRange: 10
-  muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
-  muzzleFlashDuration: 0.1
-  gunSpriteRenderer: {fileID: 5836697436503535828}
-  idleGunSprite: {fileID: 21300000, guid: f12585fff9c24a247a9321eff44467d3, type: 3}
-  firingGunSprite: {fileID: 21300000, guid: 94674070d37fa9447aae7d6ae36a2d09, type: 3}
-  gunFireSpriteDuration: 0.1
-  shootingParticles: {fileID: 0}
-  gunfireSound: {fileID: 0}
-  casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
-  casingEjectForce: 2
-  casingLifetime: 0.5
-  casingFreezeTime: 0.2
 --- !u!1 &4182868024634642349
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +684,7 @@ GameObject:
   - component: {fileID: 3697417584734976718}
   - component: {fileID: 2834192779362515030}
   m_Layer: 0
-  m_Name: ARM Assault Rifle (1)
+  m_Name: ARM Assault Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -784,7 +774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c28ded08e41534f9dc7ee007eab44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  sightRange: 5
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &4868081425194421174
 GameObject:
   m_ObjectHideFlags: 0
