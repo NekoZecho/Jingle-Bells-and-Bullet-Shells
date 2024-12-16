@@ -33,6 +33,7 @@ public class RapidFireShooter2D : MonoBehaviour
 
     [Header("Audio Settings")]
     public AudioClip gunfireSound;
+    public AudioClip reloadSound; // Added reload sound
     private AudioSource audioSource;
 
     [Header("Casing Settings")]
@@ -97,23 +98,34 @@ public class RapidFireShooter2D : MonoBehaviour
 
     void HandleReloadInput()
     {
-        if (Input.GetKeyDown(KeyCode.R) && !isReloading)
+        // Check if the reload key is pressed, the player is not reloading, and the player has a gun (gunSpriteRenderer is not null)
+        if (Input.GetKeyDown(KeyCode.R) && !isReloading && gunSpriteRenderer != null)
+        {
             StartCoroutine(ReloadAnimation());
+        }
     }
 
     IEnumerator ReloadAnimation()
     {
         isReloading = true;
 
+        // Play the reload sound if it exists
+        if (reloadSound != null && audioSource != null)
+            audioSource.PlayOneShot(reloadSound);
+
         // Show the reloading sprite
         if (reloadingSpriteRenderer != null)
             reloadingSpriteRenderer.enabled = true;
 
         gunAnimator?.SetBool("Reload", true);
+
+        // Wait for the reload duration
         yield return new WaitForSeconds(reloadTime);
 
+        // After reloading is done, reset bullet count
         currentBullets = maxBullets;
-        UpdateBulletUI(); // Reset bullet UI after reload
+        UpdateBulletUI(); // Update the bullet UI after reload
+
         isReloading = false;
 
         // Hide the reloading sprite

@@ -9,6 +9,7 @@ TagManager:
   - Map
   - Gun
   - Weapon
+  - Item
   layers:
   - Default
   - TransparentFX

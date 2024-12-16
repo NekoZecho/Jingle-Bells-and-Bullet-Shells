@@ -2287,8 +2287,8 @@ GameObject:
   - component: {fileID: 524837699933434364}
   - component: {fileID: 7089354888570429162}
   - component: {fileID: 3461143075375305059}
-  - component: {fileID: 5596436234039552910}
   - component: {fileID: 4741232821073838583}
+  - component: {fileID: 433053297273968903}
   m_Layer: 0
   m_Name: M4A1
   m_TagString: Untagged
@@ -2383,7 +2383,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5118138635693579939, guid: 8690b7e8cd5fc624ca0104fc5a0c846e, type: 3}
   firingPoint: {fileID: 9222134196746898884}
   projectileSpeed: 50
-  fireRate: 0.15
+  fireRate: 0.2
   bulletSpreadAngle: 5
   holdToFire: 1
   muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
@@ -2394,7 +2394,8 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   reloadingSpriteRenderer: {fileID: 0}
   shootingParticles: {fileID: 0}
-  gunfireSound: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  gunfireSound: {fileID: 8300000, guid: 4830bc44445f7274789ee9b7e6a5d8c3, type: 3}
+  reloadSound: {fileID: 8300000, guid: 246fdb6579918064d86079d80cb70fd5, type: 3}
   casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
   casingEjectForce: 2
   casingLifetime: 1
@@ -2403,7 +2404,6 @@ MonoBehaviour:
   reloadTriggerName: Reload
   isReloading: 0
   reloadTime: 2.7
-  maxBullets: 32
   bulletImages:
   - {fileID: 2195074278219069916}
   - {fileID: 1860851099240198291}
@@ -2441,7 +2441,30 @@ MonoBehaviour:
   bulletEmptySprite: {fileID: -8247598672270821512, guid: d763067f2a4056b4ea1e68211fa4bb36, type: 3}
   moveSpeed: 5
   playerRb: {fileID: 0}
---- !u!82 &5596436234039552910
+  maxBullets: 32
+--- !u!95 &4741232821073838583
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602161853838790083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f7ffd87a051beb41825eec2e2ec2748, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &433053297273968903
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2451,12 +2474,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
-  m_Resource: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 89f499181a503a24894f6ad1581d43b5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2538,28 +2561,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &4741232821073838583
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6602161853838790083}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7f7ffd87a051beb41825eec2e2ec2748, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6658441816946538340
 GameObject:
   m_ObjectHideFlags: 0

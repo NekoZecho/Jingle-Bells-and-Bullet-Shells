@@ -1594,7 +1594,7 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   reloadingSpriteRenderer: {fileID: 0}
   shootingParticles: {fileID: 0}
-  gunfireSound: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  gunfireSound: {fileID: 8300000, guid: 29bd35c64966d124db7446ab9b2e9ab5, type: 3}
   casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
   casingEjectForce: 2
   casingLifetime: 1
@@ -1603,7 +1603,6 @@ MonoBehaviour:
   reloadTriggerName: Reload
   isReloading: 0
   reloadTime: 2.7
-  maxBullets: 32
   bulletImages:
   - {fileID: 2094846369334240926}
   - {fileID: 1306883942672876996}
@@ -1641,6 +1640,7 @@ MonoBehaviour:
   bulletEmptySprite: {fileID: -8247598672270821512, guid: d763067f2a4056b4ea1e68211fa4bb36, type: 3}
   moveSpeed: 5
   playerRb: {fileID: 0}
+  maxBullets: 32
 --- !u!82 &5687539125874146636
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1651,10 +1651,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
-  m_Resource: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 29bd35c64966d124db7446ab9b2e9ab5, type: 3}
+  m_Resource: {fileID: 8300000, guid: 29bd35c64966d124db7446ab9b2e9ab5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.818
   m_Pitch: 1
   Loop: 1
   Mute: 0
