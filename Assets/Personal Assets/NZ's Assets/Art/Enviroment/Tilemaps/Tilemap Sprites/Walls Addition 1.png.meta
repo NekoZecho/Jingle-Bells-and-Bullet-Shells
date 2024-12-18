@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 9f93b945a2872cc44bddcc983e00cea3
+guid: 642c348cfe713c647893c574e7a121e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3400766275863753792
-    second: COBBLENM_0
+      213: -6673208698492914749
+    second: Walls Addition 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
-    sRGBTexture: 0
+    enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -51,13 +51,13 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: COBBLENM_0
+      name: Walls Addition 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cb4303171d0ec0d0800000000000000
-      internalID: -3400766275863753792
+      spriteID: 3c3784e7b000463a0800000000000000
+      internalID: -6673208698492914749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls Addition 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1772184b460746b4cab9e51513754de5
+      internalID: -980797916
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e34cf9cd4d0ed9439eee392790e0dca
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +169,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Walls Addition 1_0: -6673208698492914749
+      Walls Addition 1_1: -980797916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

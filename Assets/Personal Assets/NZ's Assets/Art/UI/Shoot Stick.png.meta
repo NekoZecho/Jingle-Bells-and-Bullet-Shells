@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 486a2b9f55778674c924c895889cdeef
+guid: a70f70bd36cde1e40908cc6f5d084d13
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5052040090854675418
-    second: NMNORMTest_0
+      213: 8432327769037443526
+    second: Shoot Stick_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NMNORMTest_0
+      name: Shoot Stick_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 9
-        height: 22
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad3dc6e12b37c1640800000000000000
-      internalID: 5052040090854675418
+      spriteID: 6c19327fd65a50570800000000000000
+      internalID: 8432327769037443526
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      NMNORMTest_0: 5052040090854675418
+      Shoot Stick_0: 8432327769037443526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

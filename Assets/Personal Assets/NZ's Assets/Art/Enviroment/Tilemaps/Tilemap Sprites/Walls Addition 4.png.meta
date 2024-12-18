@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bd7e48ada4019da418176ba5cf2d6764
+guid: 62be9164cd3fd404bbfc35bd13fa8447
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5798630439983371316
-    second: New Piskel-5_0
+      213: -8955499685665999429
+    second: Walls Addition 4_0
+  - first:
+      213: -2118755679395419704
+    second: Walls Addition 4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel-5_0
+      name: Walls Addition 4_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 0
-        width: 9
-        height: 22
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccb26095650278fa0800000000000000
-      internalID: -5798630439983371316
+      spriteID: bb571c1fb7ca7b380800000000000000
+      internalID: -8955499685665999429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls Addition 4_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c96bcb6feaa892e0800000000000000
+      internalID: -2118755679395419704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls Addition 4_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff892e5b44dd076488560c04985071a7
+      internalID: 357978606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls Addition 4_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acb13ba3d479c04c92f1a831fe33647
+      internalID: -1098940604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls Addition 4_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f34f5994e26f264db2f4beee79fb510
+      internalID: -1873960740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls Addition 4_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e3a4c27f0bf5344a47287c2dadf7ca
+      internalID: -121886052
       vertices: []
       indices: 
       edges: []
@@ -138,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: ff79b8f2b940f9147b6a503cf931abc0
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +261,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel-5_0: -5798630439983371316
+      Walls Addition 4_0: -8955499685665999429
+      Walls Addition 4_1: -2118755679395419704
+      Walls Addition 4_2: 357978606
+      Walls Addition 4_3: -1098940604
+      Walls Addition 4_4: -1873960740
+      Walls Addition 4_5: -121886052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
