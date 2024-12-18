@@ -22,6 +22,7 @@ public class TopDownEnemyAI : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer enemySpriteRenderer, weaponSpriteRenderer;
     private Sprite originalSprite;
+    private Animator animator; // Reference to the Animator component
 
     [Header("Weapon Settings")]
     public List<Sprite> hitSprites;
@@ -36,6 +37,7 @@ public class TopDownEnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = GetComponent<SpriteRenderer>();
         weaponSpriteRenderer = weapon.GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>(); // Get Animator component
         originalSprite = enemySpriteRenderer.sprite;
         player = player ? player : GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
@@ -53,11 +55,20 @@ public class TopDownEnemyAI : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer <= detectionRange && CanSeePlayer())
         {
-            if (distanceToPlayer > minimumDistance - radiusBuffer && distanceToPlayer < minimumDistance + radiusBuffer) rb.linearVelocity = Vector2.zero;
-            else if (distanceToPlayer > minimumDistance) ChasePlayer();
-            else MoveAwayFromPlayer();
+            if (distanceToPlayer > minimumDistance - radiusBuffer && distanceToPlayer < minimumDistance + radiusBuffer)
+                rb.linearVelocity = Vector2.zero;
+            else if (distanceToPlayer > minimumDistance)
+                ChasePlayer();
+            else
+                MoveAwayFromPlayer();
         }
-        else rb.linearVelocity = Vector2.zero;
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        // Update the Speed parameter in the Animator based on Rigidbody2D velocity
+        animator.SetFloat("Speed", rb.linearVelocity.magnitude);
     }
 
     private bool CanSeePlayer()
