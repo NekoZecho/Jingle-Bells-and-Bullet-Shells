@@ -1487,8 +1487,8 @@ GameObject:
   - component: {fileID: 3745767589662131453}
   - component: {fileID: 4737242793167225010}
   - component: {fileID: 4830219829961608103}
-  - component: {fileID: 5687539125874146636}
   - component: {fileID: 8885597371514462854}
+  - component: {fileID: 2642684010997473233}
   m_Layer: 0
   m_Name: M4A1
   m_TagString: Untagged
@@ -1594,7 +1594,8 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   reloadingSpriteRenderer: {fileID: 0}
   shootingParticles: {fileID: 0}
-  gunfireSound: {fileID: 8300000, guid: 29bd35c64966d124db7446ab9b2e9ab5, type: 3}
+  gunfireSound: {fileID: 8300000, guid: 8d21aba8403b317489fb9d81229cd0cc, type: 3}
+  reloadSound: {fileID: 0}
   casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
   casingEjectForce: 2
   casingLifetime: 1
@@ -1641,7 +1642,29 @@ MonoBehaviour:
   moveSpeed: 5
   playerRb: {fileID: 0}
   maxBullets: 32
---- !u!82 &5687539125874146636
+--- !u!95 &8885597371514462854
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5462115621537214693}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177af094c44bb9f41979c7f356d62157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &2642684010997473233
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1651,16 +1674,16 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 29bd35c64966d124db7446ab9b2e9ab5, type: 3}
-  m_Resource: {fileID: 8300000, guid: 29bd35c64966d124db7446ab9b2e9ab5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8d21aba8403b317489fb9d81229cd0cc, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8d21aba8403b317489fb9d81229cd0cc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.818
-  m_Pitch: 1
-  Loop: 1
+  m_Volume: 1
+  m_Pitch: 1.41
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 121
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1698,7 +1721,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.801
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1738,28 +1761,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &8885597371514462854
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462115621537214693}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 177af094c44bb9f41979c7f356d62157, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6282836197179937930
 GameObject:
   m_ObjectHideFlags: 0

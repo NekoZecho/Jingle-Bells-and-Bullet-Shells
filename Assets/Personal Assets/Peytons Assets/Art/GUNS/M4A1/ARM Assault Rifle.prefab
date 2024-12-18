@@ -2288,7 +2288,7 @@ GameObject:
   - component: {fileID: 7089354888570429162}
   - component: {fileID: 3461143075375305059}
   - component: {fileID: 4741232821073838583}
-  - component: {fileID: 433053297273968903}
+  - component: {fileID: 8500789216424856812}
   m_Layer: 0
   m_Name: M4A1
   m_TagString: Untagged
@@ -2383,7 +2383,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5118138635693579939, guid: 8690b7e8cd5fc624ca0104fc5a0c846e, type: 3}
   firingPoint: {fileID: 9222134196746898884}
   projectileSpeed: 50
-  fireRate: 0.2
+  fireRate: 0.15
   bulletSpreadAngle: 5
   holdToFire: 1
   muzzleFlashPrefab: {fileID: 9167077696419680960, guid: df33232f4ecef3643820debf398f499b, type: 3}
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   gunFireSpriteDuration: 0.1
   reloadingSpriteRenderer: {fileID: 0}
   shootingParticles: {fileID: 0}
-  gunfireSound: {fileID: 8300000, guid: 4830bc44445f7274789ee9b7e6a5d8c3, type: 3}
+  gunfireSound: {fileID: 8300000, guid: f84333a86f398c54aa6a35a2b2484dec, type: 3}
   reloadSound: {fileID: 8300000, guid: 246fdb6579918064d86079d80cb70fd5, type: 3}
   casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
   casingEjectForce: 2
@@ -2464,7 +2464,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!82 &433053297273968903
+--- !u!82 &8500789216424856812
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2474,11 +2474,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 89f499181a503a24894f6ad1581d43b5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f84333a86f398c54aa6a35a2b2484dec, type: 3}
+  m_Resource: {fileID: 8300000, guid: f84333a86f398c54aa6a35a2b2484dec, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.4
+  m_Pitch: 1.19
   Loop: 0
   Mute: 0
   Spatialize: 0

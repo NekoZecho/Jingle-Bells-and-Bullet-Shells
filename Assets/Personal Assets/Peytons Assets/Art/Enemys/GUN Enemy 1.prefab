@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7313309280382714510}
   - component: {fileID: 5044179584547230759}
   - component: {fileID: 8536781969453091132}
+  - component: {fileID: 7060213529425542296}
   m_Layer: 0
   m_Name: GUN Enemy 1
   m_TagString: Enemy
@@ -130,6 +131,7 @@ MonoBehaviour:
   hitSprites: []
   hitSpriteDuration: 0.08
   redDuration: 0.1
+  hitSound: {fileID: 8300000, guid: 1597f5dad22b6e64da920dfde0ffdec7, type: 3}
 --- !u!50 &7313309280382714510
 Rigidbody2D:
   serializedVersion: 5
@@ -225,6 +227,103 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &7060213529425542296
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074059276216142021}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1597f5dad22b6e64da920dfde0ffdec7, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1597f5dad22b6e64da920dfde0ffdec7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.193
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.859
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2315078114384010654
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +441,7 @@ GameObject:
   - component: {fileID: 2879406094164570007}
   - component: {fileID: 5836697436503535828}
   - component: {fileID: 2336595724993149671}
-  - component: {fileID: 9143076633020176669}
+  - component: {fileID: 3378670240628283251}
   m_Layer: 0
   m_Name: M4A1
   m_TagString: Untagged
@@ -446,7 +545,7 @@ MonoBehaviour:
   firingGunSprite: {fileID: 21300000, guid: 94674070d37fa9447aae7d6ae36a2d09, type: 3}
   gunFireSpriteDuration: 0.1
   shootingParticles: {fileID: 0}
-  gunfireSound: {fileID: 0}
+  gunfireSound: {fileID: 8300000, guid: f84333a86f398c54aa6a35a2b2484dec, type: 3}
   casingPrefab: {fileID: 8759969848161348482, guid: 6716e5db97cf86542a59dd22ef79ad32, type: 3}
   casingEjectForce: 2
   casingLifetime: 0.5
@@ -454,7 +553,7 @@ MonoBehaviour:
   obstructionLayerMask:
     serializedVersion: 2
     m_Bits: 64
---- !u!82 &9143076633020176669
+--- !u!82 &3378670240628283251
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -464,11 +563,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
-  m_Resource: {fileID: 8300000, guid: 9cd394e18ba839648931c2796b465bb6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f84333a86f398c54aa6a35a2b2484dec, type: 3}
+  m_Resource: {fileID: 8300000, guid: f84333a86f398c54aa6a35a2b2484dec, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1
+  m_Volume: 0.4
+  m_Pitch: 1.19
   Loop: 0
   Mute: 0
   Spatialize: 0

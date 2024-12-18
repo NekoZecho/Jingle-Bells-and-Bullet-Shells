@@ -57,6 +57,10 @@ public class RapidFireShooter2D : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D playerRb;
 
+    // New field for the object that appears during reload
+    [Header("Reloading Object Settings")]
+    public GameObject reloadingObject; // The object to show during reload
+
     private int currentBullets;
     public int maxBullets = 10;
 
@@ -90,6 +94,10 @@ public class RapidFireShooter2D : MonoBehaviour
         // Hide reloading sprite at the start
         if (reloadingSpriteRenderer != null)
             reloadingSpriteRenderer.enabled = false;
+
+        // Hide reloading object at the start
+        if (reloadingObject != null)
+            reloadingObject.SetActive(false);
     }
 
     #endregion
@@ -109,6 +117,10 @@ public class RapidFireShooter2D : MonoBehaviour
     {
         isReloading = true;
 
+        // Show the reloading object
+        if (reloadingObject != null)
+            reloadingObject.SetActive(true);
+
         // Play the reload sound if it exists
         if (reloadSound != null && audioSource != null)
             audioSource.PlayOneShot(reloadSound);
@@ -127,6 +139,10 @@ public class RapidFireShooter2D : MonoBehaviour
         UpdateBulletUI(); // Update the bullet UI after reload
 
         isReloading = false;
+
+        // Hide the reloading object
+        if (reloadingObject != null)
+            reloadingObject.SetActive(false);
 
         // Hide the reloading sprite
         if (reloadingSpriteRenderer != null)

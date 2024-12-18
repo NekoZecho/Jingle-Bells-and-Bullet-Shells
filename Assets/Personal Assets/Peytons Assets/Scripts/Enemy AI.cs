@@ -27,6 +27,10 @@ public class TopDownEnemyAI : MonoBehaviour
     public List<Sprite> hitSprites;
     public float hitSpriteDuration = 0.2f, redDuration = 1f;
 
+    [Header("Audio Settings")]
+    public AudioClip hitSound; // Sound that plays when the enemy is hit
+    private AudioSource audioSource;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,6 +39,13 @@ public class TopDownEnemyAI : MonoBehaviour
         originalSprite = enemySpriteRenderer.sprite;
         player = player ? player : GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
+
+        // Add or get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
+        if (!audioSource)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     private void Update()
@@ -78,6 +89,13 @@ public class TopDownEnemyAI : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
+        // Play hit sound
+        if (hitSound && audioSource)
+        {
+            audioSource.PlayOneShot(hitSound);
+        }
+
         if (hitSpawnObjects.Count > 0 && Random.value <= hitSpawnChance)
             Instantiate(hitSpawnObjects[Random.Range(0, hitSpawnObjects.Count)], (Vector2)transform.position + Random.insideUnitCircle * hitSpawnRadius, Quaternion.identity);
         if (currentHealth <= 0) Die();
