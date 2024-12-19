@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Walls Darken In process_0: 3592279966906812577
+      Walls Darken In process_1: -6139329725573044808
+      Walls Darken In process_2: -8627544528910197928
+      Walls Darken In process_3: 1679511168705636005
+      Walls Darken In process_4: -9132953821457445237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

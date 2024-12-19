@@ -124,7 +124,7 @@ MonoBehaviour:
   - {fileID: 4556927399075308103, guid: 45038f3304019a847a5ac274b4e00263, type: 3}
   - {fileID: 5757362677164163409, guid: 426e2db9dbb31904da42f537d9766e68, type: 3}
   deathSpawnObject: {fileID: 3366164596735277861, guid: 548e96a8fcda32146b0b4bd65c5753ef, type: 3}
-  hitSpawnChance: 1
+  hitSpawnChance: 15
   hitSpawnRadius: 0.7
   player: {fileID: 0}
   weapon: {fileID: 2879406094164570007}
