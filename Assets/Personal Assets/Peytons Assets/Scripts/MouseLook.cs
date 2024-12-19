@@ -2,7 +2,20 @@ using UnityEngine;
 
 public class LookAtObject : MonoBehaviour
 {
-    public Transform target; // The object to look at
+    public string targetTag = "Aim"; // Tag of the object to look at
+    private Transform target; // The object to look at
+
+    void Start()
+    {
+        // Find the object with the "Aim" tag
+        target = GameObject.FindGameObjectWithTag(targetTag)?.transform;
+
+        // If no object with the specified tag is found, log a warning
+        if (target == null)
+        {
+            Debug.LogWarning("No object found with the tag: " + targetTag);
+        }
+    }
 
     void Update()
     {

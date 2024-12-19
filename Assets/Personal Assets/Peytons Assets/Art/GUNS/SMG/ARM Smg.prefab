@@ -1185,6 +1185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f71b12e0f76fc46b2796b0b8579e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTag: Aim
 --- !u!114 &6308121565763778660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1203,7 @@ MonoBehaviour:
   sortingLayerWhenLeft: Foreground
   sortingOrderWhenRight: 3
   sortingLayerWhenRight: Default
+  aimTag: Aim
 --- !u!114 &306029644404137503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,6 +1217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 2197224309155888095, guid: 459741f49da00c14ba456711c865cc5d, type: 3}
+  buttonTag: DropButton
 --- !u!1 &3786122084856278422
 GameObject:
   m_ObjectHideFlags: 0

@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f71b12e0f76fc46b2796b0b8579e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  targetTag: Aim
 --- !u!114 &4269883158944892797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,6 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 2886584737387655739, guid: 41c7325b77d6a214cadbc85b1cb1ccfd, type: 3}
+  buttonTag: DropButton
 --- !u!1 &3228353173619001784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,15 +2446,6 @@ MonoBehaviour:
   playerRb: {fileID: 0}
   reloadingObject: {fileID: 0}
   maxBullets: 32
-  fireAction:
-    m_Name: Fire
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d8856d88-4068-4d6c-ac46-7a61491de369
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
 --- !u!95 &4741232821073838583
 Animator:
   serializedVersion: 7

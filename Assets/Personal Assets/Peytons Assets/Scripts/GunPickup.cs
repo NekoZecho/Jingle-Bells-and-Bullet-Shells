@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;  // To work with UI Button
 
 public class ItemDestroy : MonoBehaviour
 {
@@ -8,6 +9,28 @@ public class ItemDestroy : MonoBehaviour
 
     // Optionally, you can define a spawn offset relative to the item, if needed
     public Vector3 spawnOffset = new Vector3(0, 1, 0); // Default offset, change in the Inspector if needed
+
+    // Tag for the button (set this in the Inspector)
+    public string buttonTag = "DropButton";
+
+    private Button pickUpButton;  // Reference to the UI Button
+
+    void Start()
+    {
+        // Find the button using the tag
+        GameObject buttonObject = GameObject.FindGameObjectWithTag(buttonTag);
+
+        // If the button is found, get the Button component
+        if (buttonObject != null)
+        {
+            pickUpButton = buttonObject.GetComponent<Button>();
+            pickUpButton.onClick.AddListener(OnButtonClick);
+        }
+        else
+        {
+            Debug.LogWarning("Button with tag '" + buttonTag + "' not found.");
+        }
+    }
 
     // This method is called when another collider enters the trigger collider
     private void OnTriggerEnter2D(Collider2D other)
@@ -53,6 +76,16 @@ public class ItemDestroy : MonoBehaviour
             // Spawn the item at the determined position
             GameObject spawnedItem = Instantiate(itemToSpawn, spawnPosition, Quaternion.identity);
             spawnedItem.transform.SetParent(playerTransform);  // Parent it to the player
+        }
+    }
+
+    // This method will be called by the UI Button
+    private void OnButtonClick()
+    {
+        if (isPlayerInRange)
+        {
+            SpawnItem();
+            Destroy(gameObject);
         }
     }
 }
