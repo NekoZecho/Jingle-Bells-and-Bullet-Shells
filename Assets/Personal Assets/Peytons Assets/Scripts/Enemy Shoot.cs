@@ -37,6 +37,11 @@ public class EnemyShooter2D : MonoBehaviour
     private float nextFireTime = 0f;
     private Transform playerTarget;
 
+    // New variables
+    public float detectionDelay = 1f; // Time to wait before shooting after detecting the player
+    private float detectionTimer = 0f; // Timer to track detection time
+    private bool playerDetected = false; // Whether the player is detected or not
+
     [Header("Layer Mask for Obstructions")]
     public LayerMask obstructionLayerMask;
 
@@ -58,7 +63,26 @@ public class EnemyShooter2D : MonoBehaviour
         if (playerTarget != null)
         {
             AimAtPlayer();
-            if (CanShoot()) HandleShooting();
+            if (CanSeePlayer())
+            {
+                if (!playerDetected)
+                {
+                    // Player detected, start the detection timer
+                    playerDetected = true;
+                    detectionTimer = Time.time + detectionDelay;
+                }
+
+                if (playerDetected && Time.time >= detectionTimer)
+                {
+                    // Player has been detected and enough time has passed, check if we can shoot
+                    if (CanShoot()) HandleShooting();
+                }
+            }
+            else
+            {
+                // If the player is no longer visible, reset detection
+                playerDetected = false;
+            }
         }
         else
         {
@@ -90,7 +114,7 @@ public class EnemyShooter2D : MonoBehaviour
     bool CanShoot()
     {
         float distanceToPlayer = Vector2.Distance(firingPoint.position, playerTarget.position);
-        return distanceToPlayer <= shootingRange && CanSeePlayer() && Time.time >= nextFireTime;
+        return distanceToPlayer <= shootingRange && Time.time >= nextFireTime;
     }
 
     void HandleShooting()
