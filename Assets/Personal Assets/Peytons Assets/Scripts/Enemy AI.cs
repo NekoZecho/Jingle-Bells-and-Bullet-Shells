@@ -32,6 +32,10 @@ public class TopDownEnemyAI : MonoBehaviour
     public AudioClip hitSound; // Sound that plays when the enemy is hit
     private AudioSource audioSource;
 
+    // New variables for detection timer
+    private float detectionDelay = 1f; // Time delay before the enemy reacts
+    private float detectionTimer = 0f; // Timer for the delay
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,14 +57,25 @@ public class TopDownEnemyAI : MonoBehaviour
     private void Update()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // If within detection range and can see the player, start the detection timer
         if (distanceToPlayer <= detectionRange && CanSeePlayer())
         {
-            if (distanceToPlayer > minimumDistance - radiusBuffer && distanceToPlayer < minimumDistance + radiusBuffer)
-                rb.linearVelocity = Vector2.zero;
-            else if (distanceToPlayer > minimumDistance)
-                ChasePlayer();
+            if (detectionTimer <= 0f) // If the timer has finished, react
+            {
+                if (distanceToPlayer > minimumDistance - radiusBuffer && distanceToPlayer < minimumDistance + radiusBuffer)
+                    rb.linearVelocity = Vector2.zero;
+                else if (distanceToPlayer > minimumDistance)
+                    ChasePlayer();
+                else
+                    MoveAwayFromPlayer();
+
+                detectionTimer = detectionDelay; // Reset the detection timer
+            }
             else
-                MoveAwayFromPlayer();
+            {
+                detectionTimer -= Time.deltaTime; // Decrease the timer as time passes
+            }
         }
         else
         {

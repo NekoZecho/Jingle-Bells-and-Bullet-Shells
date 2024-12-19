@@ -550,6 +550,7 @@ MonoBehaviour:
   casingEjectForce: 2
   casingLifetime: 0.5
   casingFreezeTime: 0.2
+  detectionDelay: 1
   obstructionLayerMask:
     serializedVersion: 2
     m_Bits: 64
