@@ -10,6 +10,8 @@ TagManager:
   - Gun
   - Weapon
   - Item
+  - Aim
+  - DropButton
   layers:
   - Default
   - TransparentFX

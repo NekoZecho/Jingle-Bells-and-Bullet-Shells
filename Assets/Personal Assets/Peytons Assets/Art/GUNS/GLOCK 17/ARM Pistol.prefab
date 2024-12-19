@@ -614,6 +614,7 @@ MonoBehaviour:
   bulletEmptySprite: {fileID: -8247598672270821512, guid: d763067f2a4056b4ea1e68211fa4bb36, type: 3}
   moveSpeed: 5
   playerRb: {fileID: 0}
+  reloadingObject: {fileID: 0}
   maxBullets: 8
 --- !u!95 &3418104238687672906
 Animator:
@@ -1208,6 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f71b12e0f76fc46b2796b0b8579e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!114 &2828495096616100903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,6 +1227,7 @@ MonoBehaviour:
   sortingLayerWhenLeft: Foreground
   sortingOrderWhenRight: 3
   sortingLayerWhenRight: Default
+  aimTag: Aim
 --- !u!114 &8553714317695085913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,3 +1241,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1450084515203066739, guid: bb8b6a639d039514f8896e7fb4be971b, type: 3}
+  buttonTag: DropButton

@@ -13,6 +13,9 @@ public class FlipObject : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    // Reference to the "Aim" tagged object
+    public string aimTag = "Aim";
+
     void Start()
     {
         // Get the SpriteRenderer component from the object to flip
@@ -25,41 +28,43 @@ public class FlipObject : MonoBehaviour
 
     void Update()
     {
-        // Get the position of the mouse in the world
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        // Calculate the direction from the object to the mouse
-        Vector3 directionToMouse = mousePosition - objectToFlip.position;
-
-        // Check if the mouse is to the right or left of the object
-        if (directionToMouse.x > 0)
+        // Find the object with the "Aim" tag
+        GameObject aimObject = GameObject.FindWithTag(aimTag);
+        if (aimObject != null)
         {
-            // Mouse is on the right, make sure the object is not flipped
-            if (objectToFlip.localScale.y < 0)
-            {
-                objectToFlip.localScale = new Vector3(objectToFlip.localScale.x, -objectToFlip.localScale.y, objectToFlip.localScale.z);
-            }
+            // Calculate the direction from the object to the "Aim" object
+            Vector3 directionToAim = aimObject.transform.position - objectToFlip.position;
 
-            // Change sorting order and layer for the right side
-            if (spriteRenderer != null)
+            // Check if the "Aim" object is to the right or left of the object
+            if (directionToAim.x > 0)
             {
-                spriteRenderer.sortingOrder = sortingOrderWhenRight;
-                spriteRenderer.sortingLayerName = sortingLayerWhenRight;
-            }
-        }
-        else
-        {
-            // Mouse is on the left, flip the object on the Y-axis
-            if (objectToFlip.localScale.y > 0)
-            {
-                objectToFlip.localScale = new Vector3(objectToFlip.localScale.x, -objectToFlip.localScale.y, objectToFlip.localScale.z);
-            }
+                // "Aim" is on the right, make sure the object is not flipped
+                if (objectToFlip.localScale.y < 0)
+                {
+                    objectToFlip.localScale = new Vector3(objectToFlip.localScale.x, -objectToFlip.localScale.y, objectToFlip.localScale.z);
+                }
 
-            // Change sorting order and layer for the left side
-            if (spriteRenderer != null)
+                // Change sorting order and layer for the right side
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.sortingOrder = sortingOrderWhenRight;
+                    spriteRenderer.sortingLayerName = sortingLayerWhenRight;
+                }
+            }
+            else
             {
-                spriteRenderer.sortingOrder = sortingOrderWhenLeft;
-                spriteRenderer.sortingLayerName = sortingLayerWhenLeft;
+                // "Aim" is on the left, flip the object on the Y-axis
+                if (objectToFlip.localScale.y > 0)
+                {
+                    objectToFlip.localScale = new Vector3(objectToFlip.localScale.x, -objectToFlip.localScale.y, objectToFlip.localScale.z);
+                }
+
+                // Change sorting order and layer for the left side
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.sortingOrder = sortingOrderWhenLeft;
+                    spriteRenderer.sortingLayerName = sortingLayerWhenLeft;
+                }
             }
         }
     }

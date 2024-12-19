@@ -1,0 +1,34 @@
+{
+    "name": "Walk Controls",
+    "maps": [
+        {
+            "name": "movement",
+            "id": "eca2aa16-8c78-40e3-a69d-0091e7844715",
+            "actions": [
+                {
+                    "name": "input",
+                    "type": "Value",
+                    "id": "0571ddd5-cda0-405c-9b18-565be159d161",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2a148dba-91a2-40fb-aae4-1b03b0409e70",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

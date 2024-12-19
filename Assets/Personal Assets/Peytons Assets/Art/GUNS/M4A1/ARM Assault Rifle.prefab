@@ -1177,6 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f71b12e0f76fc46b2796b0b8579e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!114 &4269883158944892797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,6 +1195,7 @@ MonoBehaviour:
   sortingLayerWhenLeft: Foreground
   sortingOrderWhenRight: 3
   sortingLayerWhenRight: Default
+  aimTag: Aim
 --- !u!114 &-4044389545487179020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2443,6 +2445,15 @@ MonoBehaviour:
   playerRb: {fileID: 0}
   reloadingObject: {fileID: 0}
   maxBullets: 32
+  fireAction:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d8856d88-4068-4d6c-ac46-7a61491de369
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!95 &4741232821073838583
 Animator:
   serializedVersion: 7

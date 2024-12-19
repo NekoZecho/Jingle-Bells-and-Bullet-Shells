@@ -1,0 +1,34 @@
+{
+    "name": "Gun Aim",
+    "maps": [
+        {
+            "name": "GunAim",
+            "id": "e2443865-5ffa-484b-815d-9eb44f4621bc",
+            "actions": [
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "3ef3e56f-d3d1-4ac1-b233-16d41e182bcb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1960f1ca-74c9-4001-bc40-844f5b5fba24",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,22 +1,24 @@
 using UnityEngine;
 
-public class LookAtMouse : MonoBehaviour
+public class LookAtObject : MonoBehaviour
 {
+    public Transform target; // The object to look at
+
     void Update()
     {
-        // Get the mouse position in world space
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (target != null)
+        {
+            // Calculate the direction from the object to the target
+            Vector3 direction = target.position - transform.position;
 
-        // Calculate the direction from the object to the mouse
-        Vector3 direction = mousePosition - transform.position;
+            // Ensure the direction is in 2D by setting z to 0
+            direction.z = 0;
 
-        // Ensure the direction is in 2D by setting z to 0
-        direction.z = 0;
+            // Calculate the rotation angle
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // Calculate the rotation angle
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        // Apply the rotation to the object
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+            // Apply the rotation to the object
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
     }
 }
