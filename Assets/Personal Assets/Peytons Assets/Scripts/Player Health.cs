@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player has died!");
-        RestartGame();
+        SceneManager.LoadScene("Lose");
     }
 
     // Restart the current scene

@@ -1,15 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu1 : MonoBehaviour
 {
-    // This function is called when the Play button is clicked
+    [SerializeField]
+    private Dropdown difficulty;
     public void PlayGame()
     {
         // Replace "GameScene" with the name of your game scene
-        SceneManager.LoadScene("GameScene");
+        
+        SceneManager.LoadScene("Peyton Scene");
     }
+    public void PlayGameNorm()
+    {
+        // Replace "GameScene" with the name of your game scene
 
+        SceneManager.LoadScene("Difficulty 2");
+    }
+    public void PlayGameHard()
+    {
+        // Replace "GameScene" with the name of your game scene
+
+        SceneManager.LoadScene("Difficulty 3");
+    }
     // This function is called when the Settings button is clicked
     public void OpenSettings()
     {
